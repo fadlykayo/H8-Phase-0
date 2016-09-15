@@ -1,2 +1,2 @@
 # fadlykayo.github.io
-Belajar
+Pursuing my dream as a game developer
