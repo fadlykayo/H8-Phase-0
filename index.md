@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html>
-  
+
 <head>
-  <link href="style.css" type="text/css" rel="stylesheet">
+  <link href="index.css" type="text/css" rel="stylesheet">
   <title>Fadly Kayo's Webpage</title>
 </head>
-  
+
 <body>
   <div class="header">
     <h1>Fadly Kayo's Webpage</h1>
-  
+
     <h2>Welcome everyone!</h2>
   </div>
-  
+
   <div class="body">
-    
-    <img src="https://s-media-cache-ak0.pinimg.com/originals/5a/43/61/5a4361f5c348abf60aea4fa31245056a.jpg">
-    
+
+    <img src="2.jpg">
+
     <p>Hi, I am Fadly Kayo and this is my first webpage. Let's be a fullstack developer with Hacktiv8.</p>
-  
+
     <p>This is my target list:
       <ol>
         <li>Being fullstack developer</li>
         <li>Create a wonderful website</li>
       </ol>
     </p>
-  
+
     <p>Here is my contact:
       <ul>
         <li>Email: f_kayo@yahoo.com</li>
         <li>Phone: +6281806070868</li>
       </ul>
     </p>
-    
+
     <p>My daily routine:</p>
-  
+
     <table>
       <thead>
         <tr>
@@ -45,40 +45,40 @@
           <th>Night</th>
         </tr>
       </thead>
-      
+
       <tbody>
-        <tr>          
-          <th scope="row">Monday</th>    
+        <tr>
+          <th scope="row">Monday</th>
           <td colspan="4" rowspan="7">Eat, Coding, & Sleep</td>
         </tr>
-         <tr>          
-          <th scope="row">Tuesday</th>          
+         <tr>
+          <th scope="row">Tuesday</th>
         </tr>
-         <tr>          
-          <th scope="row">Wednesday</th>          
+         <tr>
+          <th scope="row">Wednesday</th>
         </tr>
-         <tr>          
-          <th scope="row">Thursday</th>          
+         <tr>
+          <th scope="row">Thursday</th>
         </tr>
-         <tr>          
-          <th scope="row">Friday</th>          
+         <tr>
+          <th scope="row">Friday</th>
         </tr>
-         <tr>          
-          <th scope="row">Saturday</th>         
+         <tr>
+          <th scope="row">Saturday</th>
         </tr>
-         <tr>          
-          <th scope="row">Sunday</th>          
+         <tr>
+          <th scope="row">Sunday</th>
         </tr>
       </tbody>
     </table>
-  
+
   </div>
-    
+
   <div class="comment">
     <h3>
       Leave your comment below:
     </h3>
-  
+
     <form>
        <label for="first-name">First Name:</label>
        <br />
@@ -91,14 +91,14 @@
        <br />
        <br />
        <label for="gender">Gender:</label>
-       <br />  
+       <br />
        <input type="radio" name="gender" value="male">Male
        <br />
        <input type="radio" name="gender" value="female">Female
        <br />
        <br />
        <label for="fav-car">Favorite Cars:</label>
-       <br />      
+       <br />
          <select name="fav-car">
            <option value="1">Honda</option>
            <option value="2">Toyota</option>
@@ -133,7 +133,7 @@
        <br />
        <br />
        <input type="submit" value="Submit">
-     </form>  
-  </div>  
-</body> 
+     </form>
+  </div>
+</body>
 </html>
