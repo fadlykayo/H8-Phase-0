@@ -6,8 +6,8 @@ _Week 1, Day 4_
 
 Welcome everyone!:blush:
 
->Hi, I am Fadly Kayo and this is my first webpage.  
-This time I'd like to cover up some new skills on how to use Markdown to format text. I'm using a free online Markdown editor called Dillinger as I am editing this page.
+>_Hi, I am Fadly Kayo and this is my first webpage.  
+This time I'd like to cover up some new skills on how to use Markdown to format text. I'm using a free online Markdown editor called Dillinger as I am editing this page._
 
 ## Syntax Examples
 Here’s an overview of Markdown syntax that you can use anywhere on [GitHub.com](www.github.com) or in your own text files.
