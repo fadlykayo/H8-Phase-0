@@ -14,7 +14,7 @@ Here’s an overview of Markdown syntax that you can use anywhere on [GitHub.com
 
 #### Headers
 
-```sh
+```
 # This is an <h1> tag
 ## This is an <h2> tag
 ###### This is an <h6> tag
@@ -22,7 +22,7 @@ Here’s an overview of Markdown syntax that you can use anywhere on [GitHub.com
 
 #### Emphasis
 
-```sh
+```
 *This text will be italic*
 _This will also be italic_
 
@@ -35,7 +35,7 @@ _You **can** combine them_
 #### Lists  
 ##### Unordered
 
-```sh
+```
 * Item 1
 * Item 2
   * Item 2a
@@ -44,7 +44,7 @@ _You **can** combine them_
 
 ##### Ordered
 
-```sh
+```
 1. Item 1
 2. Item 2
 3. Item 3
@@ -54,14 +54,14 @@ _You **can** combine them_
 
 #### Images
 
-```sh
+```
 Format: ![Alt Text](url)
 Example: ![GitHub Logo](/images/logo.png)
 ```
 
 #### Links
 
-```sh
+```
 1.  http://github.com (automatic!)
 2.  [GitHub](http://github.com)
 ```
@@ -77,9 +77,10 @@ I think you should use an
 
 ## End
 
-_I hope this would help you to understand more about Markdown!_  
+I hope this would help you to understand more about Markdown!   
 Here is some usefull links to learn more about Markdown:
 * https://guides.github.com/features/mastering-markdown/
 * http://dillinger.io/
+* http://www.markdowntutorial.com/
 
 **See ya!**
