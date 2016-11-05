@@ -12,7 +12,7 @@ Welcome everyone!:blush:
 
 >_This time I'd like to cover up some new skills on how to use Markdown to format text. I'm using a free online Markdown editor called Dillinger as I am editing this page._
 
-**Learn More About Markdown**
+**Learn More About Markdown**  
 _Week 1, Day 4_
 
 ![Markdown Image](https://cargo.dcurt.is/markdown_mark_small.png)
