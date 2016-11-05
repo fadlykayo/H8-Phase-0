@@ -1,4 +1,4 @@
-# Kaioo's Webpage
+﻿# Kaioo's Webpage
 ##### Learn More About Markdown
 _Week 1, Day 4_
 
@@ -74,6 +74,10 @@ Example: ![GitHub Logo](/images/logo.png)
 
 I think you should use an
 `<addr>` element here instead.
+
+## Future Plans
+
+Finding someone who is familiar with animating and designing game characters and continue the game project that I made before.
 
 ## End
 
