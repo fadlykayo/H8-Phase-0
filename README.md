@@ -3,10 +3,10 @@ Welcome everyone!:blush:
 
 ## About Me
 
->_Hi, I am Fadly Kayo and this is my first webpage. I am pursuing my dream as a game developer. Do you share the same dream? Want to make simple game together? Feel free to contact me at:
->* Facebook: [Fadly Kayo](https://www.facebook.com/fadlykayo)
->* E-mail: f_kayo@yahoo.com
->* Slack: @fadlykayo_
+>_Hi, I am Fadly Kayo and this is my first webpage. I am pursuing my dream as a game developer. Do you share the same dream? Want to make simple game together? Feel free to contact me at:_
+>* _Facebook: [Fadly Kayo](https://www.facebook.com/fadlykayo)_
+>* _E-mail: f_kayo@yahoo.com_
+>* _Slack: @fadlykayo_
 
 ## About This Site
 
@@ -17,7 +17,7 @@ _Week 1, Day 4_
 
 ![Markdown Image](https://cargo.dcurt.is/markdown_mark_small.png)
 
-## Syntax Examples
+### Syntax Examples
 Here’s an overview of Markdown syntax that you can use anywhere on [GitHub.com](www.github.com) or in your own text files.
 
 ### Headers
