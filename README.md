@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 # Kaioo's Webpage
 ##### Learn More About Markdown
 _Week 1, Day 4_
 =======
+=======
+>>>>>>> master
 # Kaioo's Webpage
 Welcome everyone!:blush:
 
@@ -87,10 +90,13 @@ Example: ![GitHub Logo](/images/logo.png)
 I think you should use an
 `<addr>` element here instead.
 
+<<<<<<< HEAD
 ## Future Plans
 
 Finding someone who is familiar with animating and designing game characters and continue the game project that I made before.
 
+=======
+>>>>>>> master
 ## Sources:
 
 I hope it would help you to understand more about Markdown!   
