@@ -1,8 +1,4 @@
 # Kaioo's Webpage
-##### Learn More About Markdown
-_Week 1, Day 4_
-=======
-# Kaioo's Webpage
 Welcome everyone!:blush:
 
 ## About Me
