@@ -8,7 +8,7 @@ var player = function() {
   this.personality = "";
   this.classInfo = function(job1) {
     if (job1.toLowerCase() === "brawler") {
-      return "Kamu adalah tipe penyerang jarak dekat. Kamu seorang yang pemberani. Kemampuan fisikmu melibihi orang lain.";
+      return "Kamu adalah tipe penyerang jarak dekat. Kamu seorang yang pemberani. Kemampuan fisikmu melebihi orang lain.";
     }
     else if (job1.toLowerCase() === "ranger") {
       return "Kamu adalah tipe penyerang jarak jauh. Kamu seorang yang cekatan. Ketepatan dan kecepatanmu dalam menembak sangat tinggi.";
