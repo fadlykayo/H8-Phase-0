@@ -8,6 +8,7 @@ body {
   background-attachment: fixed;
   margin: auto;
   font-family: Arial, serif;
+  display: block;
 }
 
 .header, .footer {
