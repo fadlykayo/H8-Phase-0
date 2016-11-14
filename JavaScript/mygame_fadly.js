@@ -16,6 +16,9 @@ var player = function() {
     else if (job1.toLowerCase() === "healer") {
       return "Kamu adalah seorang penyembuh. Kehadiranmu sangat dibutuhkan banyak orang. Kamu dapat menolong orang yang terluka dengan kemampuanmu.";
     }
+    else {
+      return "Kamu adalah seorang novice. Keinginanmu masih bercabang. Belum saatnya kamu menentukan class mu.";
+    }
   };
   this.charInfo = function(personal1) {
     if (personal1.toLowerCase() === "emotional") {
@@ -27,74 +30,79 @@ var player = function() {
     else if (personal1.toLowerCase() === "instinctual"){
       return "Kamu adalah seseorang yang suka mengandalkan instingmu. Tindakan, perkataan dan keputusan yang kamu ambil didasarkan pada insting spontanmu saat itu.";
     }
+    else {
+      return "Jati dirimu misterius. Banyak orang tidak mengerti tentang dirimu.";
+    }
   };
 }
 
-// Bantuan input data secara manual untuk mengetes code tanpa prompt
+// Object player1
 
 var player1 = new player();
-//player1.name = prompt("Your Name: ");
-player1.job = "brawler";
-player1.personality = "instinctual";
 
 // Else if untuk menentukan tipe job
 
-var brawler, ranger, healer;
+var brawler = 0, ranger = 0, healer = 0;
 
-if (brawler > ranger && brawler > healer) {
-  player1.job = "Brawler";
-}
-else if (ranger > brawler && ranger > healer) {
-  player1.job = "Ranger";
-}
-else if (healer > brawler && healer > ranger) {
-  player1.job = "Healer";
+function chooseJob() {
+  if (brawler > ranger && brawler > healer) {
+    player1.job = "Brawler";
+  }
+  else if (ranger > brawler && ranger > healer) {
+    player1.job = "Ranger";
+  }
+  else if (healer > brawler && healer > ranger) {
+    player1.job = "Healer";
+  }
+  else {
+    player1.job = "Novice"
+  }
 }
 
 // Else if untuk menentukan tipe personality
 
-var emotional, thinking, instinct;
+var emotional = 0, thinking = 0, instinct = 0;
 
-if (emotional > thinking && emotional > instinct) {
-  player1.personality = "Emotional";
-}
-else if (thinking > emotional && thinking > instinct) {
-  player1.personality = "Thinking";
-}
-else if (instinct > emotional && instinct > thinking) {
-  player1.personality = "Instinctual";
-}
-
-// Fungsi untuk menjalankan jawaban model 1
-
-function jawaban1() {
-  var input = ""; // jika dalam bentuk prompt, urutan nya menumpuk
-  //var input = prompt("Your Answer (1, 2, or 3))";
-  if (input == 1) {
-    instinct++;
+function choosePersona() {
+  if (emotional > thinking && emotional > instinct) {
+    player1.personality = "Emotional";
   }
-  else if (input == 2) {
-    emotional++;
+  else if (thinking > emotional && thinking > instinct) {
+    player1.personality = "Thinking";
+  }
+  else if (instinct > emotional && instinct > thinking) {
+    player1.personality = "Instinctual";
   }
   else {
-    thinking++;
+    player1.personality = "Unknown";
   }
 }
 
-// Fungsi untuk menjalankan jawaban model 2
+function a() {
+  instinct++;
+  choosePersona();
+}
 
-function jawaban2() {
-  var input = ""; // jika dalam bentuk prompt, urutan nya menumpuk
-  //var input = prompt("Your Answer (1, 2, or 3))";
-  if (input == 1) {
-    brawler++;
-  }
-  else if (input == 2) {
-    ranger++;
-  }
-  else {
-    healer++;
-  }
+function b() {
+  emotional++;
+  choosePersona();
+}
+
+function c() {
+  thinking++;
+  choosePersona();
+}
+function d() {
+  brawler++;
+  chooseJob();
+}
+function e() {
+  healer++;
+  chooseJob();
+}
+function f() {
+  ranger++;
+  chooseJob();
 }
 
 // Fungsi dari kumpulan pertanyaan + ending
@@ -108,7 +116,8 @@ function pertanyaan1() {
     var j = i+1;
     document.getElementById("changeable").innerHTML += "<br/>" + "<br/>" + j + ". " + ask1[i];
   }
-  //document.getElementById("changeable").innerHTML += "<br/>" + "<button type="button" class="button button1">Next</button>";
+  document.getElementById("changeable").innerHTML += "<br/>" + "<p><button type='button' class='button2 button1' onclick='a()'>No. 1</button> <button type='button' class='button2 button1' onclick='b()'>No. 2</button> <button type='button' class='button2 button1' onclick='c()'>No. 3</button></p>";
+  document.getElementById("changeable").innerHTML += "<p><button type='button' class='button button1' onclick='pertanyaan2()'>Next</button></p>";
 }
 
 function pertanyaan2() {
@@ -120,6 +129,8 @@ function pertanyaan2() {
     var j = i+1;
     document.getElementById("changeable").innerHTML += "<br/>" + "<br/>" + j + ". " + ask2[i];
   }
+  document.getElementById("changeable").innerHTML += "<br/>" + "<p><button type='button' class='button2 button1' onclick='a()'>No. 1</button> <button type='button' class='button2 button1' onclick='b()'>No. 2</button> <button type='button' class='button2 button1' onclick='c()'>No. 3</button></p>";
+  document.getElementById("changeable").innerHTML += "<p><button type='button' class='button button1' onclick='pertanyaan3()'>Next</button></p>";
 }
 
 function pertanyaan3() {
@@ -129,6 +140,8 @@ function pertanyaan3() {
     var j = i+1;
     document.getElementById("changeable").innerHTML += "<br/>" + "<br/>" + j + ". " + ask3[i];
   }
+  document.getElementById("changeable").innerHTML += "<br/>" + "<p><button type='button' class='button2 button1' onclick='d()'>No. 1</button> <button type='button' class='button2 button1' onclick='f()'>No. 2</button> <button type='button' class='button2 button1' onclick='e()'>No. 3</button></p>";
+  document.getElementById("changeable").innerHTML += "<p><button type='button' class='button button1' onclick='pertanyaan4()'>Next</button></p>";
 }
 
 function pertanyaan4() {
@@ -140,6 +153,8 @@ function pertanyaan4() {
     var j = i+1;
     document.getElementById("changeable").innerHTML += "<br/>" + "<br/>" + j + ". " + ask4[i];
   }
+  document.getElementById("changeable").innerHTML += "<br/>" + "<p><button type='button' class='button2 button1' onclick='d()'>No. 1</button> <button type='button' class='button2 button1' onclick='f()'>No. 2</button> <button type='button' class='button2 button1' onclick='e()'>No. 3</button></p>";
+  document.getElementById("changeable").innerHTML += "<p><button type='button' class='button button1' onclick='pertanyaan5()'>Next</button></p>";
 }
 
 function pertanyaan5() {
@@ -151,11 +166,10 @@ function pertanyaan5() {
     var j = i+1;
     document.getElementById("changeable").innerHTML += "<br/>" + "<br/>" + j + ". " + ask5[i];
   }
+  document.getElementById("changeable").innerHTML += "<br/>" + "<p><button type='button' class='button2 button1' onclick='a()'>No. 1</button> <button type='button' class='button2 button1' onclick='b()'>No. 2</button> <button type='button' class='button2 button1' onclick='c()'>No. 3</button></p>";
+  document.getElementById("changeable").innerHTML += "<p><button type='button' class='button button1' onclick='endStory()'>Next</button></p>";
 }
 
-/*function ending() {
-  document.getElementById("changeable").innerHTML = "Terima kasih " + player1.name + " atas partisipasimu memainkan Part 1 dari game ini." + <br/> +
-  "Berdasarkan hasil sementara, inilah informasi mengenai dirimu: " + <br/> +
-  "Class kamu adalah: " + player1.job + ". " + player1.classInfo(player1.job) + <br/> +
-  "Kamu adalah tipe personality: " + player1.personality + ". " + player1.charInfo(player1.personality);
-}*/
+function endStory() {
+  document.getElementById("changeable").innerHTML = "Terima kasih atas partisipasimu memainkan Part 1 dari game ini." + "<br/>" + "<br/>" +"Berdasarkan hasil sementara, inilah informasi mengenai dirimu: " + "<br/>" + "<br/>" +"Class kamu adalah: " + player1.job + ". " + player1.classInfo(player1.job) + "<br/>" + "<br/>" +"Kamu adalah tipe personality: " + player1.personality + ". " + player1.charInfo(player1.personality);
+}
