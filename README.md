@@ -3,17 +3,18 @@ Welcome everyone!:blush:
 
 ## About Me
 
->_Hi, I am Fadly Kayo and this is my first webpage. I am pursuing my dream as a game developer. Do you share the same dream? Want to make a simple game together? Feel free to contact me at:_
+>_Hi, I am Fadly Kayo and this is my webpage. I am pursuing my dream as a game developer. Do you share the same dream? Want to make a simple game together? Feel free to contact me at:_
 >* _Facebook: [Fadly Kayo](https://www.facebook.com/fadlykayo)_
 >* _E-mail: f_kayo@yahoo.com_
 >* _Slack: @fadlykayo_
 
+Check out my pre-release mini game apk: [Forest Run](https://github.com/fadlykayo/fadlykayo.github.io/releases)
+
 ## About This Site
 
->_This time I'd like to cover up some new skills on how to use Markdown to format text. I'm using a free online Markdown editor called Dillinger as I am editing this page._
+>_This time I'd like to cover up some skills on how to use Markdown to format text. I'm using a free online Markdown editor called Dillinger as I am editing this page._
 
 **Learn More About Markdown**  
-_Week 1, Day 4_
 
 ![Markdown Image](https://cargo.dcurt.is/markdown_mark_small.png)
 
@@ -91,4 +92,4 @@ Here are some useful links that I referred from:
 * http://dillinger.io/
 * http://www.markdowntutorial.com/
 
-**'Til next time, see ya! :grin:**
+**'Til the next time, see ya! :grin:**
