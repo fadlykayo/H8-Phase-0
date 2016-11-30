@@ -1,3 +1,5 @@
+// Week 5, Day 3
+
 var mainForm = document.getElementById("main-form");
 
 mainForm.addEventListener("submit", function (event) {
