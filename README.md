@@ -10,7 +10,7 @@ Welcome everyone!:blush:
 
 Check out my pre-release mini game apk: [Forest Run](https://github.com/fadlykayo/fadlykayo.github.io/releases)
 
-Browser Quest short game Part 1: [Lorsania](https://htmlpreview.github.io/?https://github.com/fadlykayo/fadlykayo.github.io/blob/master/mygame_fadly.html)
+Browser Quest short game Part 1: [Lorsania](https://fadlykayo.github.io/)
 
 ## About This Site
 
