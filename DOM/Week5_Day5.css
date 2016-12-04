@@ -90,6 +90,21 @@ body {
   left: 59%;
 }
 
+#sword-tag {
+  top: 10%;
+  left: 10%;
+}
+
+#bow-tag {
+  top: 13%;
+  left: 45%;
+}
+
+#staff-tag {
+  top: 5%;
+  left: 74%;
+}
+
 .general-panel {
   background-color: black;
   opacity: 0.7;
@@ -129,7 +144,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   height: 65%;
-  width: 55%;
+  width: 60%;
   margin: 0px 200px 0px 0px;
 }
 
@@ -230,26 +245,16 @@ h3 {
 }
 
 .option2 {
-  top: 40%;
+  top: 43%;
   left: 50%;
 }
 
 .option3 {
-  top: 65%;
-  left: 50%;
-}
-
-.option3_3 {
-  top: 67.5%;
+  top: 71%;
   left: 50%;
 }
 
 .option4 {
-  top: 87%;
-  left: 50%;
-}
-
-.option4_4 {
   top: 90%;
   left: 50%;
 }

@@ -7,6 +7,7 @@ var opening2Div = document.getElementById('opening2');
 var townDiv = document.getElementById("town");
 var town2Div = document.getElementById("town2");
 var marketDiv = document.getElementById("market");
+var eastGateDiv = document.getElementById ("east-gate");
 var bottomPanelMarket = document.getElementById("bottom-panel-market");
 var midPanelMarket = document.getElementById("mid-panel-market");
 var midPanelMarket2 = document.getElementById("mid-panel-market2");
@@ -21,6 +22,7 @@ var brawler = 0, ranger = 0, healer = 0;
 // Buttons
 
 var marketDivBtnPrev = document.getElementById("market-btn-prev");
+var marketDivBtnNext = document.getElementById("market-btn-next");
 var npcBtn = document.getElementById("npc-tag");
 var npcBtn2 = document.getElementById("npc-tag2");
 var npcBtn3 = document.getElementById("npc-tag3");
@@ -34,6 +36,10 @@ var emotionalBtn2 = document.getElementById("emotional2");
 var thinkingBtn2 = document.getElementById("thinking2");
 var instinctBtn2 = document.getElementById("instinct2");
 var leaveBtn3 = document.getElementById("leave3");
+var swordBtn = document.getElementById("sword-tag");
+var bowBtn = document.getElementById("bow-tag");
+var staffBtn = document.getElementById("staff-tag");
+var leaveBtn4 = document.getElementById("leave4");
 
 // Init all display
 openingDiv.style.display = "block";
@@ -41,11 +47,13 @@ opening2Div.style.display = "none";
 townDiv.style.display = "none";
 town2Div.style.display = "none";
 marketDiv.style.display = "none";
+eastGateDiv.style.display = "none";
 //nanti diapus
 midPanelMarket.style.display = "none";
 midPanelMarket2.style.display = "none";
 midPanelMarket3.style.display = "none";
 midPanelMarket4.style.display = "none";
+marketDivBtnNext.style.display = "none";
 
 openingDiv.addEventListener("click", function () {
   openingDiv.style.display = "none";
@@ -53,6 +61,7 @@ openingDiv.addEventListener("click", function () {
   townDiv.style.display = "block";
   town2Div.style.display = "none";
   marketDiv.style.display = "none";
+  eastGateDiv.style.display = "none";
 });
 
 townDiv.addEventListener("click", function () {
@@ -61,6 +70,7 @@ townDiv.addEventListener("click", function () {
   townDiv.style.display = "none";
   town2Div.style.display = "block";
   marketDiv.style.display = "none";
+  eastGateDiv.style.display = "none";
 });
 
 town2Div.addEventListener("click", function () {
@@ -73,6 +83,8 @@ town2Div.addEventListener("click", function () {
   midPanelMarket2.style.display = "none";
   midPanelMarket3.style.display = "none";
   midPanelMarket4.style.display = "none";
+  marketDivBtnNext.style.display = "none";
+  eastGateDiv.style.display = "none";
 });
 
 marketDivBtnPrev.addEventListener("click", function () {
@@ -81,6 +93,16 @@ marketDivBtnPrev.addEventListener("click", function () {
   townDiv.style.display = "none";
   town2Div.style.display = "block";
   marketDiv.style.display = "none";
+  eastGateDiv.style.display = "none";
+});
+
+marketDivBtnNext.addEventListener("click", function () {
+  openingDiv.style.display = "none";
+  opening2Div.style.display = "none";
+  townDiv.style.display = "none";
+  town2Div.style.display = "none";
+  marketDiv.style.display = "none";
+  eastGateDiv.style.display = "block";
 });
 
 npcBtn.addEventListener("click", function () {
@@ -94,6 +116,7 @@ npcBtn.addEventListener("click", function () {
 askBtn.addEventListener("click", function () {
   bottomPanelMarket.innerHTML = "<p>Vloyd - Item Merchant:" + "<br/>" + "<br/>" + "You are new in this town? No wonder, your face doesn't look familiar to me." + "<br/>" + "This is Lorden, the capital city of Lorsania. Although it's a beautiful place, but the life here is hard." + "<br/>" + "You need to go hunt monster outside of the city to earn gold. Otherwise you won't survive!</p>";
   flagNext = true;
+  console.log("1" + flagNext);
 });
 
 leaveBtn.addEventListener("click", function () {
@@ -112,18 +135,21 @@ npcBtn2.addEventListener("click", function () {
 emotionalBtn.addEventListener("click", function () {
   emotional++;
   flagNext2 = true;
+  console.log("2" + flagNext2);
   bottomPanelMarket.innerHTML = "<p>Flemp and his Piggy:" + "<br/>" + "<br/>" + "Thank you so much young one. You have a very kind heart. Don't get lost in this big and crowded city. If you are trying to find some weak monsters, East Forest is the place you are looking for. Take care young one.</p>";
 });
 
 thinkingBtn.addEventListener("click", function () {
   thinking++;
   flagNext2 = true;
+  console.log("2" + flagNext2);
   bottomPanelMarket.innerHTML = "<p>Flemp and His Piggy:" + "<br/>" + "<br/>" + "Thank you so much young one. I haven't seen you before. Are you an adventurer? You might want to find some useful items and equipments before you want to hunt some monsters in East Forest. Take care young one.</p>";
 });
 
 instinctBtn.addEventListener("click", function () {
   instinct++;
   flagNext2 = true;
+  console.log("2" + flagNext2);
   bottomPanelMarket.innerHTML = "<p>Flemp and His Piggy:" + "<br/>" + "<br/>" + "It's alright, young one. Thank you for your politeness. If you might want some advice, East Forest is a good place for hunting. Take care young one.</p>";
 });
 
@@ -142,24 +168,27 @@ npcBtn3.addEventListener("click", function () {
 
 emotionalBtn2.addEventListener("click", function () {
   emotional++;
-  flagNext2 = true;
+  flagNext3 = true;
+  console.log("3" + flagNext3);
   bottomPanelMarket.innerHTML = "<p>Lory:" + "<br/>" + "<br/>" + "No no no no, wait wait wait..ohh c'mon...</p>";
 });
 
 thinkingBtn2.addEventListener("click", function () {
   thinking++;
-  flagNext2 = true;
-  bottomPanelMarket.innerHTML = "<p>Lory:" + "<br/>" + "<br/>" + "Oh, hello there! You made the correct decision, welcome!" + "<br/>" + "I have these 3 babies with me, witch one do you like?</p>";
+  flagNext3 = true;
+  console.log("3" + flagNext3);
+  bottomPanelMarket.innerHTML = "<p>Lory:" + "<br/>" + "<br/>" + "Oh, hello there! You made the correct decision, welcome!" + "<br/>" + "I have these 3 babies with me, which one do you like?</p>";
   midPanelMarket3.style.display = "none";
-  //midPanelMarket4.style.display = "block";
+  midPanelMarket4.style.display = "block";
 });
 
 instinctBtn2.addEventListener("click", function () {
   instinct++;
-  flagNext2 = true;
+  flagNext3 = true;
+  console.log("3" + flagNext3);
   bottomPanelMarket.innerHTML = "<p>Lory:" + "<br/>" + "<br/>" + "You don't want to miss th...Oh, well well what do we have here! You have very good eyes youngster, welcome! Which one do you like?</p>";
   midPanelMarket3.style.display = "none";
-  //midPanelMarket4.style.display = "block";
+  midPanelMarket4.style.display = "block";
 });
 
 leaveBtn3.addEventListener("click", function () {
@@ -167,9 +196,30 @@ leaveBtn3.addEventListener("click", function () {
   midPanelMarket3.style.display = "none";
 });
 
-if (flagNext == true & flagNext2 == true && flagNext3 == true) {
+swordBtn.addEventListener("click", function () {
+  bottomPanelMarket.innerHTML = "<p>Thank you my friend! It's nice to have business with you.</p>";
+  midPanelMarket4.style.display = "none";
+});
+
+bowBtn.addEventListener("click", function () {
+  bottomPanelMarket.innerHTML = "<p>Thank you my friend! It's nice to have business with you.</p>";
+  midPanelMarket4.style.display = "none";
+});
+
+staffBtn.addEventListener("click", function () {
+  bottomPanelMarket.innerHTML = "<p>Thank you my friend! It's nice to have business with you.</p>";
+  midPanelMarket4.style.display = "none";
+});
+
+leaveBtn4.addEventListener("click", function () {
+  bottomPanelMarket.innerHTML = "<p>This is where your adventure begin. You are in the middle of crowded place. There are a lot of people around you who are selling their stuffs. You are in a market square! What are you going to do now?</p>";
+  midPanelMarket4.style.display = "none";
+});
+
+if (flagNext === true && flagNext2 === true && flagNext3 === true) {
+  console.log("sas");
+  marketDivBtnNext.style.display = "block";
   bottomPanelMarket.innerHTML = "<p>After getting some information, you know that you are in a city called Lorden the Capital City of Lorsania. You have collected enough information. Now it's time to move.</p>";
-  bottomPanelMarket.innerHTML += "<p><button type='button' class='button button-next' id='market-btn-next'>Next &raquo;</button></p>";
 }
 
 // Tipe data object
