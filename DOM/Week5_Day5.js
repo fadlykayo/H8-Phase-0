@@ -36,11 +36,11 @@ var instinctBtn2 = document.getElementById("instinct2");
 var leaveBtn3 = document.getElementById("leave3");
 
 // Init all display
-openingDiv.style.display = "none";
+openingDiv.style.display = "block";
 opening2Div.style.display = "none";
 townDiv.style.display = "none";
 town2Div.style.display = "none";
-marketDiv.style.display = "block";
+marketDiv.style.display = "none";
 //nanti diapus
 midPanelMarket.style.display = "none";
 midPanelMarket2.style.display = "none";
