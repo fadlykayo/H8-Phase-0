@@ -3,19 +3,253 @@
 }
 
 body {
-  background: url('town2.jpg') no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
   margin: auto;
   font-family: Arial, serif;
   text-align: center;
 }
-.fieldset {
-  background-color: white;
+
+@keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.press-key {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 150%);
+  animation: blink 1s;
+  animation-iteration-count: infinite;
+}
+
+.general-background {
+  background-attachment: fixed;
+  position:fixed;
+  padding: 0;
+  margin: 0;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+     -khtml-user-select: none; /* Konqueror */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.opening {
+  background: url('images/opening1.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.town {
+  background: url('images/town.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.market {
+  background: url('images/market2.jpg') no-repeat center center;
+  background-size: cover;
+  cursor: default;
+}
+
+.tag {
+  position: absolute;
+  cursor: pointer;
+}
+
+#place-tag {
+  top: 2%;
+  left: 2%;
+  cursor: default;
+}
+
+#npc-tag {
+  top: 70%;
+  left: 28.5%;
+}
+
+#npc-tag2 {
+  top: 77%;
+  left: 14%;
+}
+
+#npc-tag3 {
+  top: 63%;
+  left: 59%;
+}
+
+.general-panel {
+  background-color: black;
+  opacity: 0.7;
   font-family: Arial;
   font-size: 18px;
-  padding: 40px 50px;
-  margin: 50px 350px;
-  border: 4px solid black;
-  border-radius: 40px 40px 40px 40px;
+  border-radius: 30px 30px;
+  margin: auto;
+}
+
+.background-story-panel {
+  padding: 30px 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-panel {
+  padding: 15px 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.mid-panel {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 35%;
+  width: 25%;
+}
+
+.mid-panel2 {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 65%;
+  width: 55%;
+  margin: 0px 200px 0px 0px;
+}
+
+.right-panel {
+  padding: 10px 20px;
+  position: fixed;
+  top: 2%;
+  right: 1%;
+  weight: 20%;
+}
+
+h3 {
+  color: orange;
+  font-family: "lithos pro black";
+}
+
+.text {
+  opacity: 1;
+  color: white;
+  text-align: left;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  position: fixed;
+  opacity: 0.8;
+}
+
+.button-next {
+  background-color: #0099e6;
+  box-shadow: 0 6px #b3b3b3;
+  transform: translate(-10%, -50%);
+  top: 50%;
+  right: 0;
+}
+
+.button-next:hover {
+  background-color: #33ccff;
+}
+
+.button-next:active {
+  background-color: #33ccff;
+  box-shadow: 0 4px #808080;
+  transform: translate(-10%, -45%);
+}
+
+.button-prev {
+  background-color: #0099e6;
+  box-shadow: 0 6px #b3b3b3;
+  transform: translate(10%, -50%);
+  top: 50%;
+  left: 0;
+}
+
+.button-prev:hover {
+  background-color: #33ccff;
+}
+
+.button-prev:active {
+  background-color: #33ccff;
+  box-shadow: 0 4px #808080;
+  transform: translate(10%, -45%);
+}
+
+.button-option {
+  background-color: #333333;
+  box-shadow: 0 6px #b3b3b3;
+  transform: translate(-50%, -50%);
+}
+
+.button-option:hover {
+  background-color: #666666;
+}
+
+.button-option:active {
+  background-color: #666666;
+  box-shadow: 0 4px #4d4d4d;
+  transform: translate(-50%, -45%);
+}
+
+.option {
+  top: 15%;
+  left: 50%;
+}
+
+.option1 {
+  top: 30%;
+  left: 50%;
+}
+
+.option2 {
+  top: 40%;
+  left: 50%;
+}
+
+.option3 {
+  top: 65%;
+  left: 50%;
+}
+
+.option3_3 {
+  top: 67.5%;
+  left: 50%;
+}
+
+.option4 {
+  top: 87%;
+  left: 50%;
+}
+
+.option4_4 {
+  top: 90%;
+  left: 50%;
 }

@@ -2,39 +2,169 @@
 <html>
   <head>
     <link href="Week5_Day5.css" type="text/css" rel="stylesheet">
-    <title>Lorsania</title>
+    <title>Lorsania-Virtual Kingdom</title>
   </head>
   <body>
-    <div id="opening">
-      <div class="title">
-        <img src="lorsania.png">
-        <br/>
-        <img src="virtual.png">
+    <div class="general-background opening" id="opening">
+      <div class="press-key">
+        <img src="images/click.png">
       </div>
-      <div class="body">
-        <fieldset class="fieldset" id="field">
+    </div>
+
+    <div class="general-background opening" id="opening2">
+      <div class="general-panel bottom-panel">
+        <div class="text">
+        </div>
+      </div>
+    </div>
+
+    <div class="general-background town" id="town">
+      <div class="general-panel bottom-panel">
+        <div class="text">
           <h1>Introduction</h1>
           <p>
-            Welcome to the Part 1 Virtual Kingdom of Lorsania.
-            From now on, you are going to confront some series of choices to customize your own story ending.
-            You are going to find out what kind of class/job you are end up with and your personalities.
+            Welcome to the Virtual Kingdom of Lorsania (Part 1).
+            In this world, you are going to confront some series of events that occurs based on your own preference/choice.
+            <br/>
+            At first in this game (Part 1), the story will direct you to the same ending. Later on, you are going to explore the world on your own.
+            <br/>
+            Part 1 Ending: You are going to find out what kind of class/job you are match with and your character's personality.
           </p>
-        </fieldset>
+        </div>
       </div>
-      <div class="footer">
+    </div>
+
+    <div class="general-background town" id="town2">
+      <div class="general-panel background-story-panel">
+        <img src="images/beginning.png">
+        <div class="text">
+          In a time of strife between God, humans, and demons...
+          <br/>
+          <br/>
+          Scarred during the gruesome war and avoiding total destruction altogether, God, humans, and demons manage to enter into a truce...
+          <br/>
+          <br/>
+          But after 1,000 years of fragile and forged peace in Lorsania...
+          <br/>
+          <br/>
+          The lengthy peace eventually led the humans to forget their memories of the scars and hardship from the war. As they forgot faults of the past, selfishness, corruption, and arrogance slowly spread throughout the land...
+          <br/>
+          <br/>
+          Finally, the balance of peace broke and strange occurrences started happening. There came a strange howl from the boundaries that divided God, humans, and demons. Peaceful creatures became aggressive and attacked innocent villagers. Violent earthquakes, great hail storms drove some species to the brink of extinction...
+          <br/>
+          <br/>
+          The mysterious legend of demons were rediscovered...
+        </div>
+      </div>
+    </div>
+
+    <div class="general-background market" id="market">
+      <img src="images/market.png" class="tag" id="place-tag">
+      <img src="images/merchant.png" class="tag" id="npc-tag">
+      <img src="images/merchant2.png" class="tag" id="npc-tag2">
+      <img src="images/merchant3.png" class="tag" id="npc-tag3">
+      <div class="general-panel bottom-panel">
+        <div class="text" id="bottom-panel-market">
+          <p>
+            This is where your adventure begin. You are in the middle of crowded place.
+            There are a lot of people around you who are selling their stuffs. You are in a market square!
+            What are you going to do now?
+          </p>
+        </div>
+      </div>
+      <div class="general-panel mid-panel" id="mid-panel-market">
+        <div>
+          <button type='button' class='button button-option option1' id="ask">
+            Ask Question
+          </button>
+        </div>
+        <div>
+          <button type='button' class='button button-option option3' id="leave">
+            Leave
+          </button>
+        </div>
+      </div>
+      <div class="general-panel mid-panel2" id="mid-panel-market2">
+        <div>
+          <button type='button' class='button button-option option' id="emotional">
+            You pity him. You give 500 gold without thinking much
+          </button>
+        </div>
+        <div>
+          <button type='button' class='button button-option option2' id="thinking">
+            At first you hesitate, but you thought maybe he could give you some information. You give him 500 gold in the end
+          </button>
+        </div>
+        <div>
+          <button type='button' class='button button-option option3' id="instinct">
+            Your instinct told you not to help him. You say sorry to him
+          </button>
+        </div>
+        <div>
+          <button type='button' class='button button-option option4' id="leave2">
+            Leave
+          </button>
+        </div>
+      </div>
+      <div class="general-panel mid-panel2" id="mid-panel-market3">
+        <div>
+          <button type='button' class='button button-option option' id="emotional2">
+            You don't like him from the first impression. "He is too noisy", you thought. You just leave him
+          </button>
+        </div>
+        <div>
+          <button type='button' class='button button-option option2' id="thinking2">
+            You think it's not a bad idea to buy a weapon first before you go hunting. You stop by
+          </button>
+        </div>
+        <div>
+          <button type='button' class='button button-option option3_3' id="instinct2">
+            You actually don't care about what he's saying. Your eyes are into his goods. Your inctinct drag you to stop by
+          </button>
+        </div>
+        <div>
+          <button type='button' class='button button-option option4_4' id="leave3">
+            Leave
+          </button>
+        </div>
+      </div>
+      <div class="general-panel mid-panel2" id="mid-panel-market4">
 
       </div>
-    </div>
-    <div id="main">
-      <div id="market">
+      <div class="general-panel right-panel">
+        <div class="text">
+          <p>
+            <h3>Character Stats</h3>
+            Class: <script>player1.job;</script>
+            <br/>
+            <br/>
+            Personality:
+            <br/>
+            <br/>
+            <h3>Inventory</h3>
+            Gold:
+            <script>player1.gold;</script>
+            <br/>
+            <br/>
+            Equipment:
+            <br/>
+            <br/>
+            Items:
+          </p>
+        </div>
       </div>
-      <div id="east-gate">
-      </div>
-      <div id="east-forest">
-      </div>
+      <p><button type='button' class='button button-prev' id="market-btn-prev">&laquo; Previous</button></p>
     </div>
-    <div id="ending">
+
+    <div class="east-gate" id="east-gate">
     </div>
+
+    <div class="east-forest" id="east-forest">
+    </div>
+
+    <div class="ending" id="ending">
+    </div>
+
     <script src="Week5_Day5.js"></script>
   </body>
 </html>

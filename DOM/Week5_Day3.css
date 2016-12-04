@@ -3,7 +3,7 @@
 }
 
 body {
-  background: url('back.jpg') no-repeat center center;
+  background: url('images/grey_back.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   font-family: Arial, Courier, serif;
