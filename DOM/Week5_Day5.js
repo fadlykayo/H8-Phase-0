@@ -111,6 +111,8 @@ npcBtn.addEventListener("click", function () {
   midPanelMarket2.style.display = "none";
   midPanelMarket3.style.display = "none";
   midPanelMarket4.style.display = "none";
+  npcBtn2.disabled = true;
+  npcBtn3.disabled = true;
 });
 
 askBtn.addEventListener("click", function () {
