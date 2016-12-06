@@ -226,11 +226,12 @@ if (flagNext === true && flagNext2 === true && flagNext3 === true) {
 
 // Tipe data object
 
+// this. referred to global window "object". inget segala sesuatu kecuali primitive variable adalah object di javascript
 var player = function() {
   this.name = "?";
   this.job = "?";
   this.personality = "?";
-  this.gold = 0;
+  this.gold = 10000;
   this.classInfo = function(job1) {
     if (job1.toLowerCase() === "brawler") {
       return "Kamu adalah tipe penyerang jarak dekat. Kamu seorang yang pemberani. Kemampuan fisikmu melebihi orang lain.";
@@ -264,7 +265,6 @@ var player = function() {
 // Object player1
 
 var player1 = new player();
-player1.gold = 10000;
 
 // Else if untuk menentukan tipe job
 
