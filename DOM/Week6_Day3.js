@@ -34,8 +34,9 @@ console.log(filterArrUnder10([1, 5, 12, 15, 20])); // [12, 15, 20]
 
 var reduceFindMaximum = arr => {
   // kembalikan sebuah nilai yang mengandung angka terbesar dengan reduce!
-  return arr.reduce((currentMax, currentValue) => {
-    return Math.max(currentMax, currentValue);
+    return arr.reduce((result, currentValue) => {
+    // result menampung the previously returned value of the function
+    return Math.max(result, currentValue);
   }, 0);
 }
-console.log(reduceFindMaximum([5, 1, 7, 6, 9])); // 9
+console.log(reduceFindMaximum([5, 12, 7, 26, 9])); // 26

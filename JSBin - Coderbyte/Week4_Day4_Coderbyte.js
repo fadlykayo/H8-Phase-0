@@ -3,13 +3,49 @@
 function SimpleMode(arr) {
   var med = [], res = "", count = 1, arrComp = [], arrCount = [];
   for (var k = 0; k < arr.length; k++) {
-    if (k === 0) {
-      arrComp.push(arr[0]);
-    }
-    else if (arrComp.indexOf(arr[k]) == -1) {
+    if (arrComp.indexOf(arr[k]) == -1) {
+      // arrComp.indexOf(1), arrComp.indexOf(2), arrComp.indexOf(3), arrComp.indexOf(0), arrComp.indexOf(3)
       arrComp.push(arr[k]);
+      arrCount.push(count);
+    }
+    else {
+      arrCount[arrComp.indexOf(arr[k])] += count;
     }
   }
+  console.log("arr: " + arr);
+  console.log("arrComp: " + arrComp);
+  console.log("arrCount: " + arrCount);
+  var tam = 0, index = 0;
+  // arrComp == arr tidak bisa
+  // arrComp[p] == arr[p] kurang disarankan, karena
+  // statement dari loop nya adalah res = -1,
+  // res = -1 akan terus keluar berulang hingga arrComp[p] != arr[p]
+  // lalu pindah ke else dan me-return res
+  if (arrComp.length == arr.length) {
+    res = -1;
+    console.log("Tidak ada angka terbanyak. Res = " + res);
+    return res;
+  }
+  else {
+    for (var n = 0; n < arrCount.length; n++) {
+      if (arrCount[n] > tam) {
+        tam = arrCount[n];
+      }
+    }
+    index = arrCount.indexOf(tam);
+    res = arrComp[index];
+    console.log("Angka terbanyak: " + res);
+    // jangan masukin return di dalam for loop
+    return res;
+  }
+}
+
+var arr = [1,2,3,0,3];
+SimpleMode(arr);
+
+/*
+// Cara lain menghitung arrCount
+
   for (var m = 0; m < arrComp.length; m++) {
     arrCount[m] = 0;
   }
@@ -17,62 +53,68 @@ function SimpleMode(arr) {
     for (var j = 0; j < arr.length; j++) {
       if (arrComp[i] == arr[j]) {
         arrCount[i] += count;
+        // perbandingan ini boleh dipakai, karena
+        // statement dari loop nya menghitung sesuatu
       }
+    }
+  }
+
+// Cara lain SimpleMode (@meetup)
+
+function SimpleMode(arr) {
+  var contentValues = [], valuesCount = [];
+  for (var i = 0; i < arr.length; i++) {
+    if(contentValues.indexOf(arr[i]) === -1) {
+      contentValues.push(arr[i]);
+      valuesCount.push(1);
+    }
+    else {
+      valuesCount[contentValues.indexOf(arr[i])] += 1;
     }
   }
   console.log(arr);
-  console.log(arrComp);
-  console.log(arrCount);
-  var tam = 0, index = 0, bool = false;
-  for (var p = 0; p < arr.length; p++) {
-    if (arrComp[p] == arr[p]) {
-      res = -1;
-      console.log(res);
-    }
-    else {
-      for (var n = 0; n < arrCount.length; n++) {
-        if (arrCount[n] > tam) {
-          tam = arrCount[n];
-        }
-      }
-      index = arrCount.indexOf(tam);
-      res = arrComp[index];
-    }
-  }
-  console.log("Tam = " + tam);
-  console.log("Res = " + res);
-  return res;
+  console.log(contentValues);
+  console.log(valuesCount);
+  var newArray = valuesCount.slice();
+  var highest = newArray.sort((a,b) => (b-a))[0];
+  if(highest !== 1) return contentValues[valuesCount.indexOf(highest)]; else return -1;
 }
 
-var arr = [0,1,0,2];
-SimpleMode(arr);
+// keep this function call here
+console.log(SimpleMode([10, 4, 5, 2, 4]));
+console.log(SimpleMode([5, 10, 6, 6, 5]));
+console.log(SimpleMode([3, 4, 1, 6, 10]));
+*/
 
 function PrimeTime(num) {
   var div = [2], med = [], res = ""; //inisialisasi index 0 dengan 2
-  for (var j = 3; j < Math.pow(2,16); j+=2) {
+  for (var j = 3; j < Math.pow(2,6); j+=2) {
     div.push(j);
   }
+  console.log("Num: " + num);
   if (num == 2) {
     res = "true";
     console.log(num + " " + res);
     return res;
   }
   for (var i = 0; i < div.length; i++) {
-    if (num > div [i]) {
+    if (num > div [i]) { // tidak >= karena habis dibagi dirinya sendiri tidak boleh jadi syarat
+      console.log(div[i]);
       if (num % div [i] !== 0) {
         res = "true";
+        console.log(num + " tidak habis dibagi " + div[i] + ". " + res);
       }
       else {
-        console.log(num + " false");
-        return "false";
+        res = "false";
+        console.log(num + " habis dibagi " + div[i] + ". " + res);
+        return res;
       }
     }
   }
-  console.log(num + " " + res);
   return res;
 }
 
-var num = 53;
+var num = 55;
 PrimeTime(num);
 
 function Division(num1, num2) {
@@ -104,4 +146,3 @@ function Division(num1, num2) {
 
 var num1 = 1024, num2 = 824;
 Division(num1,num2);
-  

@@ -2,8 +2,12 @@
 
 class Student {
   constructor (name, age) {
-    this.name = name;
-    this.age = age;
+    if (typeof name == "string") {
+      this.name = name;
+    }
+    if (typeof age == "number") {
+      this.age = age;
+    }
     this.dateOfBirth = "";
     this.gender = "";
     this.studentId = "";
@@ -53,6 +57,8 @@ class Student {
 }
 
 let student = new Student ("Fadly", 26);
+student.setName(123);
+student.setAge("25");
 student.setDateOfBirth("17-02-1990");
 student.setGender("Male");
 student.setStudentId("0001");

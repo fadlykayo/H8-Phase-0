@@ -1,22 +1,54 @@
 // Week 3, Day 4
 
 function ArithGeo(arr) {
-  var a = [], b = [], result = "";
+  var a = [], b = [], c = [], d = [], result = "";
   for (var i = 0; i < arr.length-1; i++) {
     var j = i+1;
     a[i] = arr[j] - arr[i];
     b[i] = arr[j] / arr[i];
   }
   console.log(arr);
-  console.log(a);
-  console.log(b);
+  for (var l = 0; l < a.length; l++) {
+    if (c.indexOf(a[l]) == -1) {
+      c.push(a[l]);
+    }
+    if (d.indexOf(b[l]) == -1) {
+      d.push(b[l]);
+    }
+  }
+  console.log(c);
+  console.log(d);
+  if (c.length == 1) {
+    result = "Arithmetic";
+  }
+  else if (d.length == 1) {
+    result = "Geometric";
+  }
+  else if (c.length != 1 && d.length != 1) {
+    result = "-1";
+  }
+  console.log("Result: " + result);
+  return result;
+}
+
+var arr1 = [2, 6, 17, 51, 153, 459];
+ArithGeo(arr1);
+var arr2 = [2, 4, 6, 8, 10];
+ArithGeo(arr2);
+var arr3 = [2, 6, 18, 54, 162, 486];
+ArithGeo(arr3);
+
+/*
+
+// Cara lain Arith Geo:
+
   for (var k = 0; k < arr.length-2; k++) {
     var m = k+1;
-    if (a[m] == a[k]) {
+    if (a[m] - a[k] === 0) {
       console.log("Arithmetic");
       result = "Arithmetic";
     }
-    else if (b[m] == b[k]) {
+    else if (b[m] - b[k] === 0) {
       console.log("Geometric");
       result = "Geometric";
     }
@@ -25,43 +57,63 @@ function ArithGeo(arr) {
       return "-1";
     }
   }
-  console.log(result);
-  return result;
-}
 
-var arr1 = [2, 6, 18, 54, 162, 486];
-ArithGeo(arr1);
-
-/*
 // Cara lain ArithGeo (@gana)
 
 function ArithGeo(arr) {
   return (arr[1] - arr[0] === arr[arr.length-1] - arr[arr.length-2]) ? 'Arithmetic' :
-    (arr[1] / arr[0] === arr[arr.length-1] / arr[arr.length-2]) ? 'Geometric' : '-1';
+  (arr[1] / arr[0] === arr[arr.length-1] / arr[arr.length-2]) ? 'Geometric' : '-1';
 }
+
 var arr = [2,4,8,16];
 console.log(ArithGeo(arr));
 */
 
 function PowersOfTwo(num) {
   var a = [];
+  console.log("Input: " + num);
   for(var i = 1; i <= num; i++) {
     a[i-1] = Math.pow(2,i);
     if (num <= a[i-1]) { // jd num harus sama kyk a[i-1] baru true, kalo lebih kecil brati false
+      console.log("a[i-1]: " + a[i-1]);
       if (num % a[i-1] === 0) {
-        console.log(num + " true");
+        console.log(num + " habis dibagi " + a[i-1] + ". true");
         return true;
       }
       else {
-        console.log(num + " false");
+        console.log(num + " tidak habis dibagi " + a[i-1] + ". false");
         return false;
       }
     }
   }
 }
-var str = 1023;
+var str = 511;
 PowersOfTwo(str);
 
+function PowersofTwo2(num) {
+  var a = [], b = "";
+  console.log("Input: " + num);
+  for(var i = 1; i <= num; i++) {
+    a[i-1] = Math.pow(2,i);
+    if (num >= a[i-1]) { // akan meloop a sampe masih lebih kecil dari num
+      console.log("a[i-1]: " + a[i-1]);
+      if (num % a[i-1] === 0) {
+        b = true;
+        console.log(num + " habis dibagi " + a[i-1] + ". " + b);
+      }
+      else {
+        b = false;
+        console.log(num + " tidak habis dibagi " + a[i-1] + ". " + b);
+        return b;
+      }
+    }
+  }
+  console.log(num + " " + b);
+  return b;
+}
+
+var num = 56;
+PowersofTwo2(num);
 // Cara lain PowersOfTwo
 
 /*
@@ -73,27 +125,6 @@ var i = 0;
       return "false"
     i++;
   }while(true)
-
-function PowersofTwo(num) {
-  var a = [], b = "";
-  for(var i = 1; i <= num; i++) {
-    a[i-1] = Math.pow(2,i);
-    if (num >= a[i-1]) {
-      if (num % a[i-1] === 0) {
-        b = true;
-      }
-      else {
-        b = false;
-        return b;
-      }
-    }
-  }
-  console.log(b);
-  return b;
-}
-
-var num = 120;
-PowersofTwo(num);
 */
 
 function LargestPair(num) {

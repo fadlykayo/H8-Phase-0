@@ -1,51 +1,72 @@
 // Coderbyte Week 4, Day 3
 
 function LetterCountI(str) {
-  var comp = [], comp2 = [], med = [], med2 = [], count = 1, res = "", countArr = [];
+  var comp = [], comp2 = [], med = [], med2 = [],  countArr = [], countArr2 = [], countArr3 = [], count = 1, res = "";
+  var tam = 0, index = 0;
   med = str.split(" ");
   for (var i = 0; i < med.length; i++) {
-    med2.push(med[i].split(""));
-    //countArr[i] = 0;
-    comp[i] = "";
-    for (var m = 0; m < med[i].length; m++) {
-      if (m === 0) {
-        comp[i] += med[i][0];
+    countArr.push([]); // mendeklarasikan array 2 dimensi [[],[],[]] yg panjangnya sesuai med.length
+    comp[i] = ""; // untuk men-solved undefined of comp[i]
+//     countArr[i] = [];
+    for (var j = 0; j < med[i].length; j++) {
+      if (comp[i].indexOf(med[i][j]) == -1) {
+        comp[i] += med[i][j];
+//     dengan push count:
+//         countArr[i].push(count);
       }
-      else if (comp[i].indexOf(med[i][m]) == -1) {
-        comp[i] += med[i][m];
-      }
-      comp2[i] = comp[i].split("");
+//       else {
+//         countArr[i][comp[i].indexOf(med[i][j])] += count;
+//       }
     }
+//     dengan beda length:
+//     countArr.push(med[i].length - comp[i].length);
   }
-
-  //pelajari lagi cara bandingin gmn
-  for (var n = 0; n < med.length; n++) {
-    countArr.push(med2[n].length - comp[n].length);
+//   dengan menggunakan looping:
+  for (var k = 0; k < med.length; k++) {
+    med2.push(med[k].split(""));
+    comp2[k] = comp[k].split("");
+    for (var n = 0; n < comp2[k].length ; n++) {
+      countArr[k].push(0); //mengisi array 2 dimensi dengan 0 [[0, 0], [0, 0, 0, 0, 0], [0, 0, 0]] yg panjangnya sesuai comp2[k].length
+      for (var o = 0; o < med2[k].length ; o++) {
+        if (comp2[k][n] == med2[k][o]) {
+          countArr[k][n] += 1;
+        }
+      }
+    }
+    countArr2.push(countArr[k].filter(isiArray => {
+      return isiArray > 1;
+    }));
+    countArr3.push(countArr2[k].reduce((result, isiArray) => {
+      return result + isiArray;
+    }));
   }
-  console.log(med);
-  console.log(comp);
   console.log(med2);
   console.log(comp2);
+//   console.log(med);
+//   console.log(comp);
   console.log(countArr);
-  var tam = 0, tam2 = 0;
-  for (var l = 0; l < countArr.length; l++) {
-    if (countArr[l] > tam) {
-      tam = countArr[l];
+//   console.log(countArr2);
+  console.log(countArr3);
+  for (var l = 0; l < countArr3.length; l++) {
+    if (countArr3[l] > tam) {
+      tam = countArr3[l];
     }
+    index = countArr3.indexOf(tam);
   }
-  tam2 = countArr.indexOf(tam);
-  res = med[tam2];
+//   console.log(tam);
+//   console.log(index);
+  res = med[index];
   countArr.sort(function(a,b) {return b - a;});
   if (countArr[0] === 0) {
     res = "-1";
-    console.log("-1");
+    console.log(res);
     return res;
   }
   console.log(res);
   return res;
 }
 
-var str = "noo wordos herre";
+var str = "noo worddss hereee";
 LetterCountI(str);
 
 function LetterChanges(str) {
