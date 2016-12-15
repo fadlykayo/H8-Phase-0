@@ -1003,6 +1003,7 @@ box.addEventListener("click", function() {
 
   optionBtn8.addEventListener("click", function () {
     midPanel.style.display = "none";
+    bottomPanelText.innerHTML = "<p>You are at the East Forest. This is a bonus stage! Find all treasures that are hidden in this map! In the next story, you are going to confront your first creature. So be prepared!" + "<br/>" + "Note: if you can't find all the hidden treasures, you won't be able to go any further.</p>";
   });
   nextMap3();
 });
@@ -1043,6 +1044,7 @@ box2.addEventListener("click", function() {
 
   optionBtn8.addEventListener("click", function () {
     midPanel.style.display = "none";
+    bottomPanelText.innerHTML = "<p>You are at the East Forest. This is a bonus stage! Find all treasures that are hidden in this map! In the next story, you are going to confront your first creature. So be prepared!" + "<br/>" + "Note: if you can't find all the hidden treasures, you won't be able to go any further.</p>";
   });
   nextMap3();
 });
@@ -1083,6 +1085,7 @@ box3.addEventListener("click", function() {
 
   optionBtn8.addEventListener("click", function () {
     midPanel.style.display = "none";
+    bottomPanelText.innerHTML = "<p>You are at the East Forest. This is a bonus stage! Find all treasures that are hidden in this map! In the next story, you are going to confront your first creature. So be prepared!" + "<br/>" + "Note: if you can't find all the hidden treasures, you won't be able to go any further.</p>";
   });
   nextMap3();
 });
@@ -1123,6 +1126,7 @@ box4.addEventListener("click", function() {
 
   optionBtn8.addEventListener("click", function () {
     midPanel.style.display = "none";
+    bottomPanelText.innerHTML = "<p>You are at the East Forest. This is a bonus stage! Find all treasures that are hidden in this map! In the next story, you are going to confront your first creature. So be prepared!" + "<br/>" + "Note: if you can't find all the hidden treasures, you won't be able to go any further.</p>";
   });
   nextMap3();
 });
@@ -1163,6 +1167,7 @@ box5.addEventListener("click", function() {
 
   optionBtn8.addEventListener("click", function () {
     midPanel.style.display = "none";
+    bottomPanelText.innerHTML = "<p>You are at the East Forest. This is a bonus stage! Find all treasures that are hidden in this map! In the next story, you are going to confront your first creature. So be prepared!" + "<br/>" + "Note: if you can't find all the hidden treasures, you won't be able to go any further.</p>";
   });
   nextMap3();
 });
@@ -1203,6 +1208,7 @@ box6.addEventListener("click", function() {
 
   optionBtn8.addEventListener("click", function () {
     midPanel.style.display = "none";
+    bottomPanelText.innerHTML = "<p>You are at the East Forest. This is a bonus stage! Find all treasures that are hidden in this map! In the next story, you are going to confront your first creature. So be prepared!" + "<br/>" + "Note: if you can't find all the hidden treasures, you won't be able to go any further.</p>";
   });
   nextMap3();
 });
