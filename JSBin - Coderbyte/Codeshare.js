@@ -188,61 +188,6 @@ function nextTargetArea(code) {
 }
 */
 
-
-// class Rocket {
-//   constructor (name, version) {
-//     if (typeof name == "string") {
-//       this.name = name;
-//     }
-//     if (typeof version == "number") {
-//       this.version = version;
-//     }
-//     this.astronauts = [];
-//   }
-//   setRocketName (rocketName) {
-//     if (typeof rocketName == "string") {
-//       this.name = rocketName;
-//     }
-//   }
-//   setRocketVersion (rocketVersion) {
-//     if (typeof rocketVersion == "number") {
-//       this.version = rocketVersion;
-//     }
-//   }
-//   addRocketCrew (astronautName) {
-//     if (typeof astronautName == "string") {
-//       this.astronauts.push(astronautName);
-//     }
-//   }
-//   getAstronautsNames() {
-//     let toString = this.astronauts.toString();
-//     return toString;
-//   }
-
-//   getRocketInfo() {
-//     if (this.astronauts.length <= 1) {
-//       let output = "Rocket Name: " + this.name + ", Version: " + this.version + " Astronauts: " + this.astronauts.length + " person"
-//       return output
-//     }
-//     else {
-//       let output = "Rocket Name: " + this.name + ", Version: " + this.version + " Astronauts: " + this.astronauts.length + " persons"
-//       return output
-//     }
-//   }
-// }
-
-// const apolloEleven = new Rocket('Apollo Eleven', 11);
-// console.log(apolloEleven.getRocketInfo()); // "Rocket Name: Apollo Eleven, Version 11, Astronauts: 0 person".
-
-// apolloEleven.setRocketName('Apollo Eleven Update X');
-// apolloEleven.setRocketVersion(12);
-// console.log(apolloEleven.getRocketInfo()); // "Rocket Name: Apollo Eleven Update X, Version 12, Astronauts: 0 person".
-
-// apolloEleven.addRocketCrew("Neil");
-// apolloEleven.addRocketCrew("James");
-// console.log(apolloEleven.getRocketInfo()); // "Rocket Name: Apollo Eleven Update X, Version 12, Astronauts: 2 persons".
-// console.log(apolloEleven.getAstronautsNames()); // "Neil, James"
-
 // function dealWithTheJoker(playerResultArr, jokerResultArr) {
 //   var score = 0, score2 = 0, comp = [], comp2 = [], arrCount = [], arrCount2 = [], res = "", count = 1;
 //   for (var i = 0; i < playerResultArr.length; i ++) {
@@ -298,7 +243,6 @@ function nextTargetArea(code) {
 //   }
 //   return res;
 // }
-
 // console.log(dealWithTheJoker([2, 2, 3, 3, 5], [5, 5, 5, 5, 2])); // LOSE
 // console.log(dealWithTheJoker([3, 2, 3, 3, 2], [2, 3, 4, 5, 6])); // WIN
 // console.log(dealWithTheJoker([5, 2, 5, 5, 5], [2, 2, 2, 3, 1])); // WIN
@@ -306,6 +250,42 @@ function nextTargetArea(code) {
 // console.log(dealWithTheJoker([8, 8, 8, 8, 9], [2, 2, 2, 2, 6])); // DRAW
 // console.log(dealWithTheJoker([5, 5, 3, 4, 2], [8, 7, 2, 4, 7])); // DRAW
 // console.log(dealWithTheJoker([9, 3, 2, 2, 9], [5, 5, 5, 5, 2])); // LOSE
+
+/*
+Cara lain tanpa indexOf:
+
+function dealWithTheJoker(playerResultArr, jokerResultArr) {
+
+    poinpemain = 0;
+    poinjoker  = 0;
+    playerResultArr.sort();
+    jokerResultArr.sort();
+    for(i=0 ; i<playerResultArr.length ; i++){
+        if(playerResultArr[i]===playerResultArr[i+1]){
+            poinpemain+=1
+        }
+    }
+    for(j=0 ; j<jokerResultArr.length ; j++){
+        if(jokerResultArr[j]===jokerResultArr[j+1]){
+            poinjoker+=1
+        }
+    }
+    if(poinpemain>poinjoker){
+        return'Win';
+    }
+    if(poinpemain<poinjoker){
+        return'Lose';
+    }
+    return'draw';
+}
+console.log(dealWithTheJoker([2, 2, 3, 3, 5], [5, 5, 5, 5, 2])); // LOSE
+console.log(dealWithTheJoker([3, 2, 3, 3, 2], [2, 3, 4, 5, 6])); // WIN
+console.log(dealWithTheJoker([5, 2, 5, 5, 5], [2, 2, 2, 3, 7])); // WIN
+console.log(dealWithTheJoker([3, 8, 3, 3, 8], [3, 4, 5, 6, 7])); // WIN
+console.log(dealWithTheJoker([8, 8, 8, 8, 9], [2, 2, 2, 2, 6])); // DRAW
+console.log(dealWithTheJoker([5, 5, 3, 4, 2], [8, 7, 2, 4, 7])); // DRAW
+console.log(dealWithTheJoker([9, 3, 2, 2, 9], [5, 5, 5, 5, 2])); // LOSE
+*/
 
 // function arrangePairs(studentsArr) {
 //   var pairs = [];
@@ -334,6 +314,60 @@ function nextTargetArea(code) {
 // console.log(arrangePairs(['Tori', 'Nori', 'Sori', 'Wori', 'Mori'])); // ['Tori dan Nori', 'Sori dan Wori', 'Mori dan Instruktur'];
 // console.log(arrangePairs(['Rudi'])); // ['Rudi dan Instruktur']
 // console.log(arrangePairs([])); // []
+
+// class Rocket {
+//   constructor (name, version) {
+//     if (typeof name == "string") {
+//       this.name = name;
+//     }
+//     if (typeof version == "number") {
+//       this.version = version;
+//     }
+//     this.astronauts = [];
+//   }
+//   setRocketName (rocketName) {
+//     if (typeof rocketName == "string") {
+//       this.name = rocketName;
+//     }
+//   }
+//   setRocketVersion (rocketVersion) {
+//     if (typeof rocketVersion == "number") {
+//       this.version = rocketVersion;
+//     }
+//   }
+//   addRocketCrew (astronautName) {
+//     if (typeof astronautName == "string") {
+//       this.astronauts.push(astronautName);
+//     }
+//   }
+//   getAstronautsNames() {
+//     let toString = this.astronauts.toString();
+//     return toString;
+//   }
+
+//   getRocketInfo() {
+//     if (this.astronauts.length <= 1) {
+//       let output = "Rocket Name: " + this.name + ", Version: " + this.version + " Astronauts: " + this.astronauts.length + " person"
+//       return output
+//     }
+//     else {
+//       let output = "Rocket Name: " + this.name + ", Version: " + this.version + " Astronauts: " + this.astronauts.length + " persons"
+//       return output
+//     }
+//   }
+// }
+
+// const apolloEleven = new Rocket('Apollo Eleven', 11);
+// console.log(apolloEleven.getRocketInfo()); // "Rocket Name: Apollo Eleven, Version 11, Astronauts: 0 person".
+
+// apolloEleven.setRocketName('Apollo Eleven Update X');
+// apolloEleven.setRocketVersion(12);
+// console.log(apolloEleven.getRocketInfo()); // "Rocket Name: Apollo Eleven Update X, Version 12, Astronauts: 0 person".
+
+// apolloEleven.addRocketCrew("Neil");
+// apolloEleven.addRocketCrew("James");
+// console.log(apolloEleven.getRocketInfo()); // "Rocket Name: Apollo Eleven Update X, Version 12, Astronauts: 2 persons".
+// console.log(apolloEleven.getAstronautsNames()); // "Neil, James"
 
 // function foxEars(foxs) {
 //   if ( foxs === 0) {

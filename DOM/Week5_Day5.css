@@ -20,8 +20,8 @@ body {
   }
 }
 
-.press-key {
-  position: absolute;
+#press-key {
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, 150%);
@@ -49,23 +49,35 @@ body {
 }
 
 .opening {
-  background: url('images/opening1.jpg') no-repeat center center;
-  background-size: contain;
+  background: url('images/opening.jpg') no-repeat center center;
+  background-size: cover;
 }
 
 .town {
   background: url('images/town.jpg') no-repeat center center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .market {
-  background: url('images/market2.jpg') no-repeat center center;
+  background: url('images/market.jpg') no-repeat center center;
+  background-size: cover;
+  cursor: default;
+}
+
+.east-gate {
+  background: url('images/east_gate.jpg') no-repeat center center;
+  background-size: cover;
+  cursor: default;
+}
+
+.east-forest {
+  background: url('images/east_forest.jpg') no-repeat center center;
   background-size: cover;
   cursor: default;
 }
 
 .tag {
-  position: absolute;
+  position: fixed;
   cursor: pointer;
 }
 
@@ -90,31 +102,70 @@ body {
   left: 59%;
 }
 
-#sword-tag {
-  top: 10%;
-  left: 10%;
+#npc-tag4 {
+  top: 68%;
+  left: 61%;
 }
 
-#bow-tag {
-  top: 13%;
-  left: 45%;
+#npc-tag5 {
+  top: 82%;
+  left: 1%;
 }
 
-#staff-tag {
-  top: 5%;
-  left: 74%;
+#box {
+  top: 22%;
+  left: 20%;
+  width: 3%;
+  height: 6%;
+}
+
+#box2 {
+  top: 15%;
+  left: 68%;
+  width: 2.5%;
+  height: 4.5%;
+}
+
+#box3 {
+  top: 53%;
+  right: 0%;
+}
+
+#box4 {
+  top: 44%;
+  left: 70%;
+  width: 3%;
+  height: 6%;
+}
+
+#box5 {
+  top: 64%;
+  left: 23%;
+  width: 4%;
+  height: 7%;
+}
+
+#box6 {
+  top: 74%;
+  left: 86%;
 }
 
 .general-panel {
   background-color: black;
-  opacity: 0.7;
-  font-family: Arial;
+  opacity: 0.8;
   font-size: 18px;
   border-radius: 30px 30px;
-  margin: auto;
+  position: fixed;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+     -khtml-user-select: none; /* Konqueror */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
 }
 
-.background-story-panel {
+.background-panel {
   padding: 30px 50px;
   position: absolute;
   top: 50%;
@@ -124,13 +175,11 @@ body {
 
 .bottom-panel {
   padding: 15px 50px;
-  position: fixed;
   bottom: 0;
   width: 100%;
 }
 
 .mid-panel {
-  position: fixed;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -139,18 +188,15 @@ body {
 }
 
 .mid-panel2 {
-  position: fixed;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 65%;
-  width: 60%;
-  margin: 0px 200px 0px 0px;
+  height: 69%;
+  width: 57.5%;
 }
 
 .right-panel {
   padding: 10px 20px;
-  position: fixed;
   top: 2%;
   right: 1%;
   width: 20%;
@@ -162,31 +208,28 @@ h3 {
 }
 
 .text {
-  opacity: 1;
   color: white;
   text-align: left;
 }
 
 .button {
+  position: fixed;
   display: inline-block;
   padding: 15px 25px;
   font-size: 20px;
   cursor: pointer;
-  text-align: center;
   text-decoration: none;
   outline: none;
   color: #fff;
   border: none;
   border-radius: 15px;
-  position: fixed;
-  opacity: 0.8;
 }
 
 .button-next {
   background-color: #0099e6;
   box-shadow: 0 6px #b3b3b3;
   transform: translate(-10%, -50%);
-  top: 50%;
+  bottom: 15%;
   right: 0;
 }
 
@@ -204,7 +247,7 @@ h3 {
   background-color: #0099e6;
   box-shadow: 0 6px #b3b3b3;
   transform: translate(10%, -50%);
-  top: 50%;
+  bottom: 15%;
   left: 0;
 }
 
@@ -234,8 +277,98 @@ h3 {
   transform: translate(-50%, -45%);
 }
 
+.button-option:disabled {
+  background-color: #8c8c8c;
+  box-shadow: 0 4px #4d4d4d;
+  cursor: not-allowed;
+}
+
+.button-image {
+  background: transparent;
+  width: 20%;
+  height: 50%;
+  border: none !important;
+}
+
+.button-image:hover {
+  background-color: #666666;
+}
+
+.button-image:active {
+  background-color: #262626;
+  transform: translate(0%, 2%);
+}
+
+.button-image:disabled {
+  background-color: #262626;
+  cursor: not-allowed;
+}
+
+.button-image2 {
+  background: transparent;
+  width: 40%;
+  height: 20%;
+  border: none !important;
+  font-size:0;
+}
+
+.button-image2:hover {
+  background-color: #666666;
+}
+
+.button-image2:active {
+  background-color: #262626;
+  transform: translate(0%, 2%);
+}
+
+.button-image2:disabled {
+  background-color: #262626;
+  cursor: not-allowed;
+}
+
+.button-image3 {
+  background: transparent;
+  border: none !important;
+  font-size:0;
+}
+
+.position {
+  top: 10%;
+  left: 10%;
+}
+
+.position2 {
+  top: 10%;
+  left: 41%;
+}
+
+.position3 {
+  top: 10%;
+  left: 71%;
+}
+
+.position4 {
+  top: 10%;
+  left: 30%;
+}
+
+.position5 {
+  top: 35%;
+  left: 30%;
+}
+
+.position6 {
+  top: 60%;
+  left: 30%;;
+}
+
 .option {
   top: 15%;
+  left: 50%;
+}
+
+.option_2 {
+  top: 17%;
   left: 50%;
 }
 
@@ -244,8 +377,23 @@ h3 {
   left: 50%;
 }
 
+.option1_1 {
+  top: 5%;
+  left: 35%;
+}
+
+.option1_2 {
+  top: 10%;
+  left: 38%;
+}
+
 .option2 {
   top: 43%;
+  left: 50%;
+}
+
+.option2_2 {
+  top: 45%;
   left: 50%;
 }
 
@@ -254,7 +402,41 @@ h3 {
   left: 50%;
 }
 
+.option3_2 {
+  top: 80%;
+  left: 50%;
+}
+
 .option4 {
   top: 90%;
   left: 50%;
+}
+
+.option4_2 {
+  top: 5%;
+  left: 30%;
+}
+
+.option5 {
+  position: absolute;
+  top: 7%;
+  left: 0%;
+}
+
+.option6 {
+  position: absolute;
+  top: 11%;
+  left: 14%;
+}
+
+.option7 {
+  position: absolute;
+  top: 0%;
+  left: 2.5%;
+}
+
+.option8 {
+  position: absolute;
+  top: 7%;
+  left: 2.5%;
 }
