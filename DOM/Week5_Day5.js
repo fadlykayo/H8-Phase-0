@@ -1201,7 +1201,7 @@ box6.addEventListener("click", function() {
     pDOM18.style.display = "none";
     pDOM19.style.display = "block";
     optionBtn19.setAttribute("class", "tag button-image3 option1_2");
-    optionBtn19.innerHTML = "<img src='images/potion_small.png'>";
+    optionBtn19.innerHTML = "<img src='DOM/images/potion_small.png'>";
     player1.item.push("Small Potion");
     attributSet();
   }
