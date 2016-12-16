@@ -1,0 +1,442 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  font-family: Arial, serif;
+  text-align: center;
+}
+
+@keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+#press-key {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 150%);
+  animation: blink 1s;
+  animation-iteration-count: infinite;
+}
+
+.general-background {
+  background-attachment: fixed;
+  position:fixed;
+  padding: 0;
+  margin: 0;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+     -khtml-user-select: none; /* Konqueror */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.opening {
+  background: url('images/opening.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.town {
+  background: url('images/town.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.market {
+  background: url('images/market.jpg') no-repeat center center;
+  background-size: cover;
+  cursor: default;
+}
+
+.east-gate {
+  background: url('images/east_gate.jpg') no-repeat center center;
+  background-size: cover;
+  cursor: default;
+}
+
+.east-forest {
+  background: url('images/east_forest.jpg') no-repeat center center;
+  background-size: cover;
+  cursor: default;
+}
+
+.tag {
+  position: fixed;
+  cursor: pointer;
+}
+
+#place-tag {
+  top: 2%;
+  left: 2%;
+  cursor: default;
+}
+
+#npc-tag {
+  top: 70%;
+  left: 28.5%;
+}
+
+#npc-tag2 {
+  top: 77%;
+  left: 14%;
+}
+
+#npc-tag3 {
+  top: 63%;
+  left: 59%;
+}
+
+#npc-tag4 {
+  top: 68%;
+  left: 61%;
+}
+
+#npc-tag5 {
+  top: 82%;
+  left: 1%;
+}
+
+#box {
+  top: 22%;
+  left: 20%;
+  width: 3%;
+  height: 6%;
+}
+
+#box2 {
+  top: 15%;
+  left: 68%;
+  width: 2.5%;
+  height: 4.5%;
+}
+
+#box3 {
+  top: 53%;
+  right: 0%;
+}
+
+#box4 {
+  top: 44%;
+  left: 70%;
+  width: 3%;
+  height: 6%;
+}
+
+#box5 {
+  top: 64%;
+  left: 23%;
+  width: 4%;
+  height: 7%;
+}
+
+#box6 {
+  top: 74%;
+  left: 86%;
+}
+
+.general-panel {
+  background-color: black;
+  opacity: 0.8;
+  font-size: 18px;
+  border-radius: 30px 30px;
+  position: fixed;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+     -khtml-user-select: none; /* Konqueror */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.background-panel {
+  padding: 30px 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-panel {
+  padding: 15px 50px;
+  bottom: 0;
+  width: 100%;
+}
+
+.mid-panel {
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 37%;
+  width: 25%;
+}
+
+.mid-panel2 {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 69%;
+  width: 57.5%;
+}
+
+.right-panel {
+  padding: 10px 20px;
+  top: 2%;
+  right: 1%;
+  width: 20%;
+}
+
+h3 {
+  color: orange;
+  font-family: "lithos pro black";
+}
+
+.text {
+  color: white;
+  text-align: left;
+}
+
+.button {
+  position: fixed;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+}
+
+.button-next {
+  background-color: #0099e6;
+  box-shadow: 0 6px #b3b3b3;
+  transform: translate(-10%, -50%);
+  bottom: 15%;
+  right: 0;
+}
+
+.button-next:hover {
+  background-color: #33ccff;
+}
+
+.button-next:active {
+  background-color: #33ccff;
+  box-shadow: 0 4px #808080;
+  transform: translate(-10%, -45%);
+}
+
+.button-prev {
+  background-color: #0099e6;
+  box-shadow: 0 6px #b3b3b3;
+  transform: translate(10%, -50%);
+  bottom: 15%;
+  left: 0;
+}
+
+.button-prev:hover {
+  background-color: #33ccff;
+}
+
+.button-prev:active {
+  background-color: #33ccff;
+  box-shadow: 0 4px #808080;
+  transform: translate(10%, -45%);
+}
+
+.button-option {
+  background-color: #333333;
+  box-shadow: 0 6px #b3b3b3;
+  transform: translate(-50%, -50%);
+}
+
+.button-option:hover {
+  background-color: #666666;
+}
+
+.button-option:active {
+  background-color: #666666;
+  box-shadow: 0 4px #4d4d4d;
+  transform: translate(-50%, -45%);
+}
+
+.button-option:disabled {
+  background-color: #8c8c8c;
+  box-shadow: 0 4px #4d4d4d;
+  cursor: not-allowed;
+}
+
+.button-image {
+  background: transparent;
+  width: 20%;
+  height: 50%;
+  border: none !important;
+}
+
+.button-image:hover {
+  background-color: #666666;
+}
+
+.button-image:active {
+  background-color: #262626;
+  transform: translate(0%, 2%);
+}
+
+.button-image:disabled {
+  background-color: #262626;
+  cursor: not-allowed;
+}
+
+.button-image2 {
+  background: transparent;
+  width: 40%;
+  height: 20%;
+  border: none !important;
+  font-size:0;
+}
+
+.button-image2:hover {
+  background-color: #666666;
+}
+
+.button-image2:active {
+  background-color: #262626;
+  transform: translate(0%, 2%);
+}
+
+.button-image2:disabled {
+  background-color: #262626;
+  cursor: not-allowed;
+}
+
+.button-image3 {
+  background: transparent;
+  border: none !important;
+  font-size:0;
+}
+
+.position {
+  top: 10%;
+  left: 10%;
+}
+
+.position2 {
+  top: 10%;
+  left: 41%;
+}
+
+.position3 {
+  top: 10%;
+  left: 71%;
+}
+
+.position4 {
+  top: 10%;
+  left: 30%;
+}
+
+.position5 {
+  top: 35%;
+  left: 30%;
+}
+
+.position6 {
+  top: 60%;
+  left: 30%;;
+}
+
+.option {
+  top: 15%;
+  left: 50%;
+}
+
+.option_2 {
+  top: 17%;
+  left: 50%;
+}
+
+.option1 {
+  top: 30%;
+  left: 50%;
+}
+
+.option1_1 {
+  top: 5%;
+  left: 35%;
+}
+
+.option1_2 {
+  top: 10%;
+  left: 38%;
+}
+
+.option2 {
+  top: 43%;
+  left: 50%;
+}
+
+.option2_2 {
+  top: 45%;
+  left: 50%;
+}
+
+.option3 {
+  top: 71%;
+  left: 50%;
+}
+
+.option3_2 {
+  top: 80%;
+  left: 50%;
+}
+
+.option4 {
+  top: 90%;
+  left: 50%;
+}
+
+.option4_2 {
+  top: 5%;
+  left: 30%;
+}
+
+.option5 {
+  position: absolute;
+  top: 7%;
+  left: 0%;
+}
+
+.option6 {
+  position: absolute;
+  top: 11%;
+  left: 14%;
+}
+
+.option7 {
+  position: absolute;
+  top: 0%;
+  left: 2.5%;
+}
+
+.option8 {
+  position: absolute;
+  top: 7%;
+  left: 2.5%;
+}

@@ -1,30 +1,75 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link href="Browser Quiz - Javascript/mygame_fadly.css" type="text/css" rel="stylesheet">
-  <title>Kaioo's House</title>
-</head>
-<body>
-  <div class="header">
-    <img src="Browser Quiz - Javascript/Lorsania.png">
-  </div>
-  <div id="changeable" class="body">
-    <h1>Introduction</h1>
-    <p>
-      Welcome to the Part 1 Virtual Kingdom of Lorsania.
-      From now on, you are going to confront some series of choices to customize your own story ending.
-      You are going to find out what kind of class/job you are end up with and your personalities.
-    </p>
-    <button type="button" class="button2 button1" onclick="pertanyaan1()">
-      Let's go!
-    </button>
-  </div>
-  <div class="footer">
-    <img src="Browser Quiz - Javascript/Virtual.png">
-  </div>
-  <p class="version">
-    v.01 by &copy; Fadly Kayo
-  </p>
-  <script src="Browser Quiz - Javascript/mygame_fadly.js"></script>
-</body>
+  <head>
+    <link href="DOM_1/Week5_Day5.css" type="text/css" rel="stylesheet">
+    <title>Lorsania-Virtual Kingdom</title>
+  </head>
+
+  <body>
+    <audio loop id="myVideo">
+      <source src="DOM_1/images/nogamenolife.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="general-background opening" id="opening">
+      <img id="press-key">
+    </div>
+
+    <div class="general-background town" id="town">
+    </div>
+
+    <div class="general-background town" id="town2">
+    </div>
+
+    <div class="general-panel background-panel" id="background-panel">
+      <span class="text" id="background-panel-text"></span>
+    </div>
+
+    <div class="general-background market" id="market">
+      <p><button type='button' class='button button-prev' id="market-btn-prev"></button></p>
+      <p><button type='button' class='button button-next' id="market-btn-next"></button></p>
+    </div>
+
+    <img class="tag" id="npc-tag">
+    <img class="tag" id="npc-tag2">
+    <img class="tag" id="npc-tag3">
+    <img class="tag" id="sword-tag">
+    <img class="tag" id="bow-tag">
+    <img class="tag" id="staff-tag">
+
+    <div class="general-background east-gate" id="east-gate">
+      <p><button type='button' class='button button-prev' id="east-gate-btn-prev"></button></p>
+      <p><button type='button' class='button button-next' id="east-gate-btn-next"></button></p>
+    </div>
+
+    <img class="tag" id="npc-tag4">
+    <img class="tag" id="npc-tag5">
+
+    <div class="general-background east-forest" id="east-forest">
+      <p><button type='button' class='button button-prev' id="east-forest-btn-prev"></button></p>
+      <p><button type='button' class='button button-next' id="east-forest-btn-next"></button></p>
+    </div>
+
+    <div id="treasure-tag">
+    </div>
+
+    <img class="tag" id="place-tag">
+
+    <div id="mid-panel">
+      <span class="text" id="mid-panel-text"></span>
+    </div>
+
+    <div class="general-panel right-panel" id="right-panel">
+      <span class="text" id="right-panel-text"></span>
+    </div>
+
+    <div class="general-panel bottom-panel" id="bottom-panel">
+      <span class="text" id="bottom-panel-text"></span>
+    </div>
+
+    <div class="general-panel background-panel" id="end-panel">
+      <span class="text" id="end-panel-text"></span>
+    </div>
+
+    <script src="DOM_1/Week5_Day5.js"></script>
+  </body>
 </html>
