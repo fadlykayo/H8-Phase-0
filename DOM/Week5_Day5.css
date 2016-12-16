@@ -174,7 +174,7 @@ body {
 }
 
 .bottom-panel {
-  padding: 15px 50px;
+  padding: 15px 40px;
   bottom: 0;
   width: 100%;
 }
@@ -191,7 +191,7 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 74%;
+  height: 78%;
   width: 57.5%;
 }
 
