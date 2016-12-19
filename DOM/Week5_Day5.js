@@ -584,7 +584,7 @@ npcTagImg2.addEventListener("click", function() {
     if (player1.gold >= 500) {
       player1.gold -= 500;
     }
-    else{
+    else {
       bottomPanelText.innerHTML = "You don't have enough gold!";
       return false;
     }
@@ -601,7 +601,7 @@ npcTagImg2.addEventListener("click", function() {
     if (player1.gold >= 500) {
       player1.gold -= 500;
     }
-    else{
+    else {
       bottomPanelText.innerHTML = "You don't have enough gold!";
       return false;
     }
@@ -694,7 +694,7 @@ npcTagImg3.addEventListener("click", function() {
       if (player1.gold >= 5000) {
         player1.gold -= 5000;
       }
-      else{
+      else {
         bottomPanelText.innerHTML = "You don't have enough gold!";
         return false;
       }
@@ -710,7 +710,7 @@ npcTagImg3.addEventListener("click", function() {
       if (player1.gold >= 5000) {
         player1.gold -= 5000;
       }
-      else{
+      else {
         bottomPanelText.innerHTML = "You don't have enough gold!";
         return false;
       }
@@ -726,7 +726,7 @@ npcTagImg3.addEventListener("click", function() {
       if (player1.gold >= 5000) {
         player1.gold -= 5000;
       }
-      else{
+      else {
         bottomPanelText.innerHTML = "You don't have enough gold!";
         return false;
       }
@@ -764,7 +764,7 @@ npcTagImg3.addEventListener("click", function() {
       if (player1.gold >= 5000) {
         player1.gold -= 5000;
       }
-      else{
+      else {
         bottomPanelText.innerHTML = "You don't have enough gold!";
         return false;
       }
@@ -780,7 +780,7 @@ npcTagImg3.addEventListener("click", function() {
       if (player1.gold >= 5000) {
         player1.gold -= 5000;
       }
-      else{
+      else {
         bottomPanelText.innerHTML = "You don't have enough gold!";
         return false;
       }
@@ -796,7 +796,7 @@ npcTagImg3.addEventListener("click", function() {
       if (player1.gold >= 5000) {
         player1.gold -= 5000;
       }
-      else{
+      else {
         bottomPanelText.innerHTML = "You don't have enough gold!";
         return false;
       }
@@ -862,7 +862,7 @@ npcTagImg4.addEventListener("click", function() {
       brawler++;
       if (player1.equipment.indexOf("Heavy Armor") == -1) {
         player1.equipment.push("Heavy Armor");
-      };
+      }
       attributSet();
       bottomPanelText.innerHTML = "<p>You chose Heavy Armor. Heavy armors grant bonus life, bonus armor as well as defensive abilities.</p>";
       optionBtn13.disabled = true;
@@ -873,7 +873,7 @@ npcTagImg4.addEventListener("click", function() {
       ranger++;
       if (player1.equipment.indexOf("Leather Armor") == -1) {
         player1.equipment.push("Leather Armor");
-      };
+      }
       attributSet();
       bottomPanelText.innerHTML = "<p>You chose Leather Armor. Leather armors provide movement speed boosts, crowd control defense, damage reduction and stealth.</p>";
       optionBtn12.disabled = true;
@@ -884,7 +884,7 @@ npcTagImg4.addEventListener("click", function() {
       healer++;
       if (player1.equipment.indexOf("Cloth Armor") == -1) {
         player1.equipment.push("Cloth Armor");
-      };
+      }
       attributSet();
       bottomPanelText.innerHTML = "<p>You chose Cloth Armor. Cloth armors provide enhanced magic damage, offensive and defensive abilities when using magic skills.</p>";
       optionBtn12.disabled = true;
@@ -1219,20 +1219,20 @@ function nextMap() {
   if (flagNext === true && flagNext2 == true && flagNext3 == true) {
     marketDivBtnNext.style.display = "block";
     //bottomPanelText.innerHTML = "<p>After getting some information, you know that you are in a city called Lorden the Capital City of Lorsania. You have collected enough information. Now it's time to move.</p>";
-  };
+  }
 };
 
 function nextMap2() {
   if (flagNext4 === true && flagNext5 == true) {
     eastGateDivBtnNext.style.display = "block";
     //bottomPanelText.innerHTML = "<p>You are now ready to go out of the city. It's time to hunt.</p>";
-  };
+  }
 };
 
 function nextMap3() {
   if (flagNext6 === true && flagNext7 == true && flagNext8 == true && flagNext9 == true && flagNext10 == true && flagNext11 == true) {
     eastForestDivBtnNext.style.display = "block";
-  };
+  }
 };
 
 // Notes
