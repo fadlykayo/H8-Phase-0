@@ -1,0 +1,100 @@
+<html>
+	<head>
+    	<title>Array Opt</title>
+  	</head>
+  	<body>
+  		<!-- kosong -->
+  	</body>
+  	<script type="text/javascript">
+		var body = document.body;
+		kontenJS = document.createElement('div');
+		kontenJS.setAttribute('id', 'konten');
+		body.appendChild(kontenJS); 
+		arrSoal = [
+					['Zat yang tidak dapat diuraikan lagi menjadi zat yang lebih sederhana melalui reaksi kimia biasa disebut','Unsur','Molekul','Atom','Unsur','Partikel'],
+					['Sebuah atom memiliki jumlah elektron 7 dan nomor massanya 19. Berapakah jumlah neutron pada atom tersebut?','12','9','10','12','14'],
+					['Dalam satu golongan, besarnya jari-jari atom dari atas ke bawah adalah...','Bertambah','Bertambah','Berkurang','Tetap','Mengecil'],
+					['Sifat-sifat unsur yang berubah secara beraturan seiring pertambahan nomor atomnya disebut...','Sifat periodik','Sifat koligatif','Sifat periodik','Sifat unsur','Sifat golongan'],
+					['Suatu ikatan dimana pasangan elektron yang dipakai bersama tertarik lebih kuat ke salah satu atom disebut...','Ikatan kovalen polar','Ikatan kovalen polar','Ikatan ion','Ikatan kovalen koordinat','Ikatan van der Wals'],
+					['Zat dibawah ini yang terhidrolisis sempurna di dalam air adalah..','Ammonium karbonat','Sodium klorida','Ammonium karbonat','Barium klorida','Ammonium sulfat'],
+					['Nama koloid untuk fase terdispersi gas dan fase pendispersi cair adalah...','Buih','Emulsi','Sol','Buih','Aerosol cair'],
+					['Suatu keadaan dimana asam dan basa tepat habis bereaksi dalam proses titrasi dinamakan...','Titik ekivalen','Titik ekivalen','Titik akhir titrasi','Titik kritis','Titik indikator berubah warna']
+		];
+		function acak(array) {
+			var m = array.length, t, i;
+		  	while (m) {
+		    	i = Math.floor(Math.random() * m--);
+		    	t = array[m];
+		    	array[m] = array[i];
+		    	array[i] = t;
+		  	}
+		  	return array;
+		};
+		arrSoal = acak(arrSoal);
+		function soalAwal(){
+			soalJS = document.createElement('h2');
+			soalJS.setAttribute('id', 'soal');
+			soalJSText = document.createTextNode(arrSoal[0][0]);
+			soalJS.appendChild(soalJSText);
+			kontenJS.appendChild(soalJS);
+			for(let i=0 ; i<4 ; i++){
+				pilihanJS = document.createElement('button');
+				pilihanJS.setAttribute('id','buttonPilihan'+i);
+				pilihanJSText = document.createTextNode(arrSoal[0][i+2]);
+				pilihanJS.appendChild(pilihanJSText);
+				kontenJS.appendChild(pilihanJS);
+			};
+		};
+		function soalInti(){
+			let i=0;			
+			let benar=0;
+			function lanjut(){
+				document.getElementById('soal').innerHTML=arrSoal[i+1][0];
+				var tam1, tam2, tam3, tam4;
+				function calculate() {
+					do {
+					    tam1 = Math.floor((Math.random() * 4));
+					    tam2 = Math.floor((Math.random() * 4));
+					    tam3 = Math.floor((Math.random() * 4));
+					    tam4 = Math.floor((Math.random() * 4));
+				  	}  
+				  	while (tam1 == tam2 || tam1 == tam3 || tam1 == tam4 || tam2 == tam3 || tam2 == tam4 || tam3 == tam4);  
+				}
+				calculate();
+				document.getElementById('buttonPilihan0').innerHTML=arrSoal[i+1][tam1+2];
+				document.getElementById('buttonPilihan1').innerHTML=arrSoal[i+1][tam2+2];
+				document.getElementById('buttonPilihan2').innerHTML=arrSoal[i+1][tam3+2];
+				document.getElementById('buttonPilihan3').innerHTML=arrSoal[i+1][tam4+2];
+				if(i<arrSoal.length-1){
+					i++;
+				};
+			};
+			benarJS = document.createElement('h2');
+			benarJS.setAttribute('id', 'benar');
+			benarJSText = document.createTextNode('Jumlah soal benar '+benar);
+			benarJS.appendChild(benarJSText);
+			kontenJS.appendChild(benarJS);
+			for(let j=0 ; j<4 ; j++){
+				document.getElementById('buttonPilihan'+j).addEventListener('click', function() {
+					var jawab = [0,1,2,3];
+					jawab[j] = document.getElementById('buttonPilihan'+j).innerHTML;
+					if(jawab[j] === arrSoal[i][1]){
+						alert('benarrrr');
+						benar++;
+						console.log(benar);
+						document.getElementById('benar').innerHTML = 'Jumlah soal benar '+benar;
+					}
+					else{
+						alert('salah');
+					}
+					if(i<arrSoal.length-1){
+						lanjut();
+					};
+				});
+			}
+		}
+//	Mulai KUIS
+	soalAwal();
+	soalInti();
+	</script>
+</html>
