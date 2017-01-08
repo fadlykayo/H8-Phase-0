@@ -1,5 +1,7 @@
 "use strict"
 
+// masih bugs untuk index setelah 0
+
 // class Dictionary {
 //   // Your code here to receive user input & sort the array
 //

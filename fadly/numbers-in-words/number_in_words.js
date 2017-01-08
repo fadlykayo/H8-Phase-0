@@ -13,17 +13,6 @@ function in_words(angka, result = [], result2 = []) {
       console.log(strings);
       console.log(strings.length);
       in_words(depan, result);
-      if (strings.length > 3 && strings.length < 7) {
-        if (i == 3) {
-          result.push("JUTA");
-        }
-      }
-      in_words(belakang, result);
-      if (strings.length > 6 && strings.length < 10) {
-        if (i == 3 && strings.length != 7 && strings.length != 7) {
-          result.push("RIBU");
-        }
-      }
       return result.join(" ");
     }
   }
