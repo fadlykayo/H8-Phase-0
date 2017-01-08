@@ -1,5 +1,23 @@
 "use strict";
 
+/*
+sudah OK. sedikit feedback kalo mau mempersingkat lagi proses nya, itu number nya dijadikan string saja.. kemudian waktu di kalikan (var tam) baru di convert lagi jadi numbber.
+
+contoh penggalan code nya :
+let simple_recursive = (number) => {
+let string = number.toString()
+if (string.length > 1) {
+let result = 1
+for (let i = 0; i < string.length; i++) {
+result *= Number(string.charAt(i))
+}
+return simple_recursive(result)
+} else {
+return number
+}
+}
+*/
+
 // release 0
 let prime_factors = (angka) => {
   // write your code here
