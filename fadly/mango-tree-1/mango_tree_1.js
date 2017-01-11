@@ -106,6 +106,7 @@ console.log(`The tree is alive! :smile:`);
 do {
   tree.grow();
   tree.produceMangoes();
+  console.log(tree.fruits);
 
   console.log(`[Year ${tree.age} Report] Height = ${tree.height} m | Fruits harvested = ${tree.fruit.length} ${tree.fruitDetails()}`);
 } while (tree.healthy === true)

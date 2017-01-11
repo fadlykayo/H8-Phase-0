@@ -77,6 +77,10 @@ class TreeGrove {
   constructor(tree = []) {
     this.tree = tree;
   }
+  // kalo mau dirubah ke composite, argument dari inputTree(argument) hanya variable2 yg ingin dirubah saja,
+  // constructor class AppleTree nya harus punya semua attribut, dan hanya mengganti yg ingin diganti. sisanya diisi string kosong
+  // kalo kebalikannya, untuk dirubah ke inheritance, array nya dipecah sesuai dengan banyaknya jenis object yg ada di dalamnya
+  // di teliti, bisa ada brp banyak model class yg terbentuk
   inputTree(name, ages, heights, fruits, health) {
     if (name == "AppleTree") {
       let appleTree = new AppleTree();
