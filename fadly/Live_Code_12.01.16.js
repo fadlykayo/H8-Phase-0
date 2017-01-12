@@ -24,7 +24,6 @@ function deretBilangan(number) {
 
 console.log(deretBilangan(10));
 
-
 function solvePola(string) {
   let angka = [1,2,3,4,5,6,7,8,9]
   let stringArr = string.split(" ");
@@ -68,25 +67,44 @@ function solvePola(string) {
       }
     }
   }
-
-
-  //   for (let i = 0, i < var1.length; i++) {
-//     for (let j = 0; j < angka.length; j++) {
-//       if (var1[i] )
-//       var1.splice(indexOf1, 1, angka[j])
-//       var
-
-//     }
-//   }
-
-//   for (let j = 0; j < angka.length; j++) {
-//       if ()
-//       var1[indexOf1] = angka[j];
-//     }
-
-//   console.log(var1_next, hasilKali_next);
   return res;
 }
 
 console.log(solvePola("42#3 * 188 = 80#204"));
 console.log(solvePola("8#61 * 895 = 78410#5"));
+
+let array_masalah = [[1,2,3,4], [5,6,7,8], [9,10,11,12], [13,14,15,16]];
+let array_masalah2 = [[1,2,3,4,5], [6,7,8,9,10], [11,12,13,14,15], [16,17,18,19,20]];
+
+function polaSpiral(array_masalah) {
+  let res = [];
+  let tam = [];
+  let tam2 = [];
+  let tam3 = [];
+
+  for (let i = array_masalah.length-1; i >= 0; i--) {
+    tam.push(array_masalah[array_masalah.length-1][i]);
+  }
+
+  for (let i = array_masalah.length-3; i < array_masalah.length-1; i++) {
+    tam2.push(array_masalah[array_masalah.length-3][i]);
+  }
+
+  for (let i = array_masalah.length-2; i > 0; i--) {
+    tam3.push(array_masalah[array_masalah.length-2][i]);
+  }
+
+  res.push(array_masalah[0]);
+  res.push(array_masalah[array_masalah.length-3][array_masalah.length-1]);
+  res.push(array_masalah[array_masalah.length-2][array_masalah.length-1]);
+  res.push(tam);
+  res.push(array_masalah[array_masalah.length-2][0]);
+  res.push(array_masalah[array_masalah.length-3][0]);
+  res.push(tam2);
+  res.push(tam3);
+
+  console.log(res.join(","))
+  return res.join(",");
+}
+
+polaSpiral(array_masalah);
