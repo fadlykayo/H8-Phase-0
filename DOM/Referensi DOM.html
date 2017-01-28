@@ -1,0 +1,47 @@
+<head>
+  <style>
+    #map2, #map3 {
+      display:none
+    }
+  </style>
+</head>
+
+<body>
+  <div id="panel" style="position:fixed; background: rgba(0,0,0, 2); color:white">
+    <h1 id="h1">H1</h1>
+    <h3>Current Map <span id="mapLocation">MAP 1</span></h3>
+    <button id="to1" style="width: 30px; padding: 20px">to map 1</button>
+    <button id="to2" style="width: 30px; padding: 20px">to map 2</button>
+  </div>
+
+  <div id="map1" style="background: #353535; width: 100%; height: 100%;"></div>
+  <div id="map2" style="background: #777; width: 100%; height: 100%;"></div>
+  <div id="map3" style="background: #888; width: 100%; height: 100%;"></div>
+  <script>
+    var map1 = document.getElementById('map1');
+    var map2 = document.getElementById('map2');
+    var map3 = document.getElementById('map3');
+
+    var mapLocation = document.getElementById('mapLocation');
+
+    var to2 = document.getElementById('to2');
+    to2.addEventListener('click', function() {
+      map1.style.display = 'none';
+      map3.style.display = 'none';
+      map2.style.display = 'block';
+
+      mapLocation.innerHTML = 'MAP 2';
+      h1.innerHTML = "H2";
+    });
+
+    var to1 = document.getElementById('to1');
+    to1.addEventListener('click', function() {
+      map2.style.display = 'none';
+      map3.style.display = 'none';
+      map1.style.display = 'block';
+
+      mapLocation.innerHTML = 'MAP 1';
+      h1.innerHTML = "H1";
+    });
+  </script>
+</body>
