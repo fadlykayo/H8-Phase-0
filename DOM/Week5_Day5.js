@@ -147,11 +147,8 @@ function decoration() {
   box6.setAttribute("id", "box6");
   treasureTagImg.appendChild(box6);
   box6.style.display = "none";
-<<<<<<< HEAD
-};
-=======
 }
->>>>>>> development
+
 decoration();
 
 function attributSet() {
@@ -170,11 +167,8 @@ function attributSet() {
     else {
       player1.job = "Novice"
     }
-<<<<<<< HEAD
-  };
-=======
   }
->>>>>>> development
+  
   chooseJob();
 
   // Else if untuk menentukan tipe personality
@@ -192,11 +186,8 @@ function attributSet() {
     else {
       player1.personality = "Unknown";
     }
-<<<<<<< HEAD
-  };
-=======
   }
->>>>>>> development
+
   choosePersona();
 
   var goldInfo = document.getElementById("gold");
@@ -205,11 +196,8 @@ function attributSet() {
   equipInfo.innerHTML = player1.equipment;
   var itemInfo = document.getElementById("item");
   itemInfo.innerHTML = player1.item;
-<<<<<<< HEAD
-};
-=======
 }
->>>>>>> development
+
 attributSet();
 
 // Create Buttons
@@ -367,11 +355,8 @@ function createButton() {
   optionBtn19.setAttribute("id", "option19");
   midPanelText.appendChild(pDOM19);
   pDOM19.style.display = "none";
-<<<<<<< HEAD
-};
-=======
 }
->>>>>>> development
+
 createButton();
 
 // Events
@@ -525,11 +510,7 @@ eastForestDivBtnNext.addEventListener("click", function() {
   box4.style.display = "none";
   box5.style.display = "none";
   box6.style.display = "none";
-<<<<<<< HEAD
-})
-=======
 });
->>>>>>> development
 
 npcTagImg.addEventListener("click", function() {
   bottomPanelText.innerHTML = "<p>Vloyd - Item Merchant:" + "<br/>" + "<br/>" + "What are you looking at?! Are you gonna buy something?</p>";
@@ -608,11 +589,7 @@ npcTagImg2.addEventListener("click", function() {
     if (player1.gold >= 500) {
       player1.gold -= 500;
     }
-<<<<<<< HEAD
-    else{
-=======
     else {
->>>>>>> development
       bottomPanelText.innerHTML = "You don't have enough gold!";
       return false;
     }
@@ -629,11 +606,7 @@ npcTagImg2.addEventListener("click", function() {
     if (player1.gold >= 500) {
       player1.gold -= 500;
     }
-<<<<<<< HEAD
-    else{
-=======
     else {
->>>>>>> development
       bottomPanelText.innerHTML = "You don't have enough gold!";
       return false;
     }
@@ -726,11 +699,7 @@ npcTagImg3.addEventListener("click", function() {
       if (player1.gold >= 5000) {
         player1.gold -= 5000;
       }
-<<<<<<< HEAD
-      else{
-=======
       else {
->>>>>>> development
         bottomPanelText.innerHTML = "You don't have enough gold!";
         return false;
       }
@@ -746,11 +715,7 @@ npcTagImg3.addEventListener("click", function() {
       if (player1.gold >= 5000) {
         player1.gold -= 5000;
       }
-<<<<<<< HEAD
-      else{
-=======
       else {
->>>>>>> development
         bottomPanelText.innerHTML = "You don't have enough gold!";
         return false;
       }
@@ -766,11 +731,7 @@ npcTagImg3.addEventListener("click", function() {
       if (player1.gold >= 5000) {
         player1.gold -= 5000;
       }
-<<<<<<< HEAD
-      else{
-=======
       else {
->>>>>>> development
         bottomPanelText.innerHTML = "You don't have enough gold!";
         return false;
       }
@@ -808,11 +769,7 @@ npcTagImg3.addEventListener("click", function() {
       if (player1.gold >= 5000) {
         player1.gold -= 5000;
       }
-<<<<<<< HEAD
-      else{
-=======
       else {
->>>>>>> development
         bottomPanelText.innerHTML = "You don't have enough gold!";
         return false;
       }
@@ -828,11 +785,7 @@ npcTagImg3.addEventListener("click", function() {
       if (player1.gold >= 5000) {
         player1.gold -= 5000;
       }
-<<<<<<< HEAD
-      else{
-=======
       else {
->>>>>>> development
         bottomPanelText.innerHTML = "You don't have enough gold!";
         return false;
       }
@@ -848,11 +801,7 @@ npcTagImg3.addEventListener("click", function() {
       if (player1.gold >= 5000) {
         player1.gold -= 5000;
       }
-<<<<<<< HEAD
-      else{
-=======
       else {
->>>>>>> development
         bottomPanelText.innerHTML = "You don't have enough gold!";
         return false;
       }
@@ -918,11 +867,7 @@ npcTagImg4.addEventListener("click", function() {
       brawler++;
       if (player1.equipment.indexOf("Heavy Armor") == -1) {
         player1.equipment.push("Heavy Armor");
-<<<<<<< HEAD
-      };
-=======
       }
->>>>>>> development
       attributSet();
       bottomPanelText.innerHTML = "<p>You chose Heavy Armor. Heavy armors grant bonus life, bonus armor as well as defensive abilities.</p>";
       optionBtn13.disabled = true;
@@ -933,11 +878,7 @@ npcTagImg4.addEventListener("click", function() {
       ranger++;
       if (player1.equipment.indexOf("Leather Armor") == -1) {
         player1.equipment.push("Leather Armor");
-<<<<<<< HEAD
-      };
-=======
       }
->>>>>>> development
       attributSet();
       bottomPanelText.innerHTML = "<p>You chose Leather Armor. Leather armors provide movement speed boosts, crowd control defense, damage reduction and stealth.</p>";
       optionBtn12.disabled = true;
@@ -948,11 +889,7 @@ npcTagImg4.addEventListener("click", function() {
       healer++;
       if (player1.equipment.indexOf("Cloth Armor") == -1) {
         player1.equipment.push("Cloth Armor");
-<<<<<<< HEAD
-      };
-=======
       }
->>>>>>> development
       attributSet();
       bottomPanelText.innerHTML = "<p>You chose Cloth Armor. Cloth armors provide enhanced magic damage, offensive and defensive abilities when using magic skills.</p>";
       optionBtn12.disabled = true;
@@ -1284,26 +1221,6 @@ box6.addEventListener("click", function() {
 // Next Map
 
 function nextMap() {
-<<<<<<< HEAD
-  if (flagNext === true && flagNext2 == true && flagNext3 == true) {
-    marketDivBtnNext.style.display = "block";
-    //bottomPanelText.innerHTML = "<p>After getting some information, you know that you are in a city called Lorden the Capital City of Lorsania. You have collected enough information. Now it's time to move.</p>";
-  };
-};
-
-function nextMap2() {
-  if (flagNext4 === true && flagNext5 == true) {
-    eastGateDivBtnNext.style.display = "block";
-    //bottomPanelText.innerHTML = "<p>You are now ready to go out of the city. It's time to hunt.</p>";
-  };
-};
-
-function nextMap3() {
-  if (flagNext6 === true && flagNext7 == true && flagNext8 == true && flagNext9 == true && flagNext10 == true && flagNext11 == true) {
-    eastForestDivBtnNext.style.display = "block";
-  };
-};
-=======
   if (flagNext === true && flagNext2 === true && flagNext3 == true) {
     marketDivBtnNext.style.display = "block";
     //bottomPanelText.innerHTML = "<p>After getting some information, you know that you are in a city called Lorden the Capital City of Lorsania. You have collected enough information. Now it's time to move.</p>";
@@ -1322,7 +1239,6 @@ function nextMap3() {
     eastForestDivBtnNext.style.display = "block";
   }
 }
->>>>>>> development
 
 // Notes
 
