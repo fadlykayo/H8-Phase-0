@@ -364,7 +364,7 @@ createButton();
 openingDiv.addEventListener("click", function() {
   townDiv.style.display = "block";
   bottomPanel.style.display = "block";
-  bottomPanelText.innerHTML = "<h1>Introduction</h1>" + "<p>Welcome to the Virtual Kingdom of Lorsania (Part 1)." + "</br>" + "</br>" + "In this world, you are going to confront some series of events that occurs based on your own preference/choice." + "<br/>" + "At first in this game (Part 1), the story will direct you to the same ending. Later on, you are going to explore the world on your own." + "<br/>" + "<br/>" + "Part 1 Ending: You are going to find out what kind of class/job you are match with and your character's personality.</p>";
+  bottomPanelText.innerHTML = "<h1>Introduction</h1>" + "<p>Welcome to the Virtual Kingdom of Lorsania (Part 1)." + "</br>" + "</br>" + "In this world, you are going to confront some series of events that occurs based on your own preference/choice." + "<br/>" + "At first in this game (Part 1), the story will direct you to the same ending. Later on, you are going to explore the world on your own." + "<br/>" + "<br/>" + "Part 1 Ending: You are going to find out what kind of class/job you are match with and your character's personality. Credits: https://github.com/fadlykayo</p>";
   // backgroundPanel.style.display = "none"; sowieso ga muncul karena deklarasi awal
 });
 
