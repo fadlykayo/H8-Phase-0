@@ -12,9 +12,9 @@ Check out my pre-release mini game apk: [Forest Run](https://github.com/fadlykay
 
 Browser Quest short game Part 1: [Lorsania](https://fadlykayo.github.io/)
 
-## About This Site
+## Abouts
 
->_This time I'd like to cover up some skills on how to use Markdown to format text. I'm using a free online Markdown editor called Dillinger as I am editing this page._
+>_Pardon for the messiness in my READMEs. Haven't had the time to tidy them up. But soon enough I will. Promise!_
 
 **Learn More About Markdown**  
 
