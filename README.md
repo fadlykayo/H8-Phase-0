@@ -3,9 +3,9 @@ Welcome everyone!:blush:
 
 ## About Me
 
->_Hi, I am Fadly Kayo and this is my webpage. I am pursuing my dream as a game developer. Do you share the same dream? Want to make a simple game together? Feel free to contact me at:_
+>_Hi, I am Fadly Kayo and this is my github page. I am pursuing my dream as a game developer. Do you share the same dream? Let's make nothing into something! Feel free to contact me at:_
 >* _Facebook: [Fadly Kayo](https://www.facebook.com/fadlykayo)_
->* _E-mail: f_kayo@yahoo.com_
+>* _E-mail: f_kayo@yahoo.com, fadly.kayo@googlemail.com_
 >* _Slack: @fadlykayo_
 
 Check out my pre-release mini game apk: [Forest Run](https://github.com/fadlykayo/fadlykayo.github.io/releases)
@@ -14,7 +14,7 @@ Browser Quest short game Part 1: [Lorsania](https://fadlykayo.github.io/)
 
 ## Abouts
 
->_Pardon for the messiness in my READMEs. Haven't had the time to tidy them up. But soon enough I will. Promise!_
+>_Pardon for the messiness in my READMEs. Haven't had the time to tidy them up. But soon I will, promise!_
 
 **Learn More About Markdown**  
 
