@@ -3,7 +3,7 @@ Welcome everyone!:blush:
 
 ## About Me
 
->_Hi, I am Fadly Kayo and this is my github page. I am pursuing my dream as a game developer. Do you share the same dream? Let's make nothing into something! Feel free to contact me at:_
+>_Hi, I am Fadly Kayo and this is my github page. I am pursuing my dream as a game developer. Do you share the same dream? Let's make nothing into something together! Feel free to contact me at:_
 >* _Facebook: [Fadly Kayo](https://www.facebook.com/fadlykayo)_
 >* _E-mail: f_kayo@yahoo.com, fadly.kayo@googlemail.com_
 >* _Slack: @fadlykayo_
