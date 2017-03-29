@@ -27,32 +27,34 @@ _I am open to anyone who would share the same passion to develop something toget
 
 ## Projects
 
-### Geo-ARG
+### [Geo-ARG](https://github.com/Geo-ARG/Alternate-Reality-Game):
 >_A mobile game based Geolocation where you can socialize with others._
 
->_Role: back-end engineer._
->_Language: Javascript._
->_The server side (REST API) was built with Node.js, Express and Sequelize (Postgres + Postgis Extension) using TDD-Method. At the front side, we use React.js altogether with Redux and Native-Base UI. The team management and workflow itself was using Scrum, Kanban and Github/Git._
->_Platform: Android_
->_Release: Mar 2017_
+>* _Role: back-end engineer._
+>* _Language: Javascript._
+>* _The server side (REST API) was built with Node.js, Express and Sequelize (Postgres + Postgis Extension) using TDD-Method. At the front side, we use React.js altogether with Redux and Native-Base UI. The team management and workflow itself was using Scrum, Kanban and Github/Git._
+>* _Platform: Android_
+>* _Release: Mar 2017_
 
-### PT.SUPERFOX
+### [PT.SUPERFOX](https://github.com/PTSUPERFOX):
 >_A social web-based game. Game features: character customization, town hall for chats, mini game tamagochi_
 
->_Role: back-end engineer._
->_Language: Javascript_
->_Frameworks and Libraries: NodeJs, ExpressJs, JQuery, AJAX, Mongoose, Mocha, Chai, MaterializeCSS_
->_Platform: Web_
->_Under development: since Feb 2017
+>* _Role: back-end engineer._
+>* _Language: Javascript_
+>* _Frameworks and Libraries: NodeJs, ExpressJs, JQuery, AJAX, Mongoose, Mocha, Chai, MaterializeCSS_
+>* _Platform: Web_
+>* _Under development: since Feb 2017
 
-### Forest Run: [Forest Run](https://github.com/fadlykayo/fadlykayo.github.io/releases)_
+### [Forest Run](https://github.com/fadlykayo/fadlykayo.github.io/releases):
 >_An Endless Runner game developed using Unity3D and Blender. _
 
->_Language: C#_
->_Project description: Solo Project. Just for learning and hobby purpose_
->_Platform: Android_
->_Release: Feb 2016
+>* _Language: C#_
+>* _Project description: Solo Project. Just for learning and hobby purpose_
+>* _Platform: Android_
+>* _Release: Feb 2016
 
-### Browser Quest short game Part 1: [Lorsania](https://fadlykayo.github.io/)
+### [Lorsania](https://fadlykayo.github.io/):
+Browser Quest mini game (Part 1) 
 
-**'Thank your for visiting, see ya! :grin:**
+
+**Thank your for coming! Until next time, see ya! :grin:**
