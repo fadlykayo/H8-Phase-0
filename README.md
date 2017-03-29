@@ -18,12 +18,12 @@ _I am open to anyone who would share the same passion to develop something toget
 
 ## Specialties
 
->* Languages: Javascript, NodeJS, C#, C++ (Basic), HTML, CSS                                                 
+>* _Languages: Javascript, NodeJS, C#, C++ (Basic), HTML, CSS                                                 
 >* Frameworks: ExpressJS, React, Redux, React Native, Mocha
 >* Libraries: JQuery, Sequelize, Mongoose, Bootstrap, MaterializeCSS, D3 (Basic), Chai, Jest
 >* Databases: MongoDB, PostgresSQL, Sqlite
 >* Gaming: Unity3D
->* Other: Git, Amazon AWS (Basic)
+>* Other: Git, Amazon AWS (Basic)_
 
 ## Projects
 
@@ -43,18 +43,18 @@ _I am open to anyone who would share the same passion to develop something toget
 >* _Language: Javascript_
 >* _Frameworks and Libraries: NodeJs, ExpressJs, JQuery, AJAX, Mongoose, Mocha, Chai, MaterializeCSS_
 >* _Platform: Web_
->* _Under development: since Feb 2017
+>* _Status: development since Feb 2017_
 
 ### [Forest Run](https://github.com/fadlykayo/fadlykayo.github.io/releases):
->_An Endless Runner game developed using Unity3D and Blender. _
+>_An Endless Runner game developed using Unity3D and Blender._
 
 >* _Language: C#_
 >* _Project description: Solo Project. Just for learning and hobby purpose_
 >* _Platform: Android_
->* _Release: Feb 2016
+>* _Release: Feb 2016_
 
 ### [Lorsania](https://fadlykayo.github.io/):
-Browser Quest mini game (Part 1) 
+>_Browser Quest mini game (Part 1) 
 
 
 **Thank your for coming! Until next time, see ya! :grin:**
