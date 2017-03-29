@@ -1,5 +1,5 @@
 # Fadly Kayo's Github Profile
-Hi everyone! :blush:
+Hello everyone! :blush:
 
 ## About Me
 
@@ -55,6 +55,3 @@ _I am open to anyone who would share the same passion to develop something toget
 
 ### [Lorsania](https://fadlykayo.github.io/):
 >_Browser Quest mini game (Part 1)_
-
-
-**Thank your for coming! Until next time, see ya! :grin:**
