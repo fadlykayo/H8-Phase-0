@@ -3,19 +3,18 @@ Welcome everyone!:blush:
 
 ## About Me
 
->*I am a highly motivated, well-organized and competitive person with many experiences in team and project management, as well as organizational leadership.
+>* _I am a highly motivated, well-organized and competitive person with many experiences in team and project management, as well as organizational leadership.
 
->*However, although my background study was electrical engineering, computer science and programming are what I enjoy the most. I spend most of my free time to be excelled on this field. Lately, I have joined a 4 months intensive programming boot camp that gives me the comprehensive view about what I can do as a full stack web and app developer for the rest of my career. I have also gained experiences in developing some mobile and web games when I was an intern at Fluffy Fairy Games back then in Karlsruhe, Germany as a Quality Assurance.
+>* _However, although my background study was electrical engineering, computer science and programming are what I enjoy the most. I spend most of my free time to be excelled on this field. Lately, I have joined a 4 months intensive programming boot camp that gives me the comprehensive view about what I can do as a full stack web and app developer for the rest of my career. I have also gained experiences in developing some mobile and web games when I was an intern at Fluffy Fairy Games back then in Karlsruhe, Germany as a Quality Assurance.
 
->*On my school and college year, I have always been a class and organization’s representative for 9 years straight. I love to challenge myself to find new experiences, meet new friends and adapt in a new environment. 
+>* _On my school and college year, I have always been a class and organization’s representative for 9 years straight. I love to challenge myself to find new experiences, meet new friends and adapt in a new environment. 
 
->*In general, I am a well-planned and coordinated person, especially in programming. 
-Exploring new technologies, developing games, webs and apps have always been my interest.
+>* _In general, I am a well-planned and coordinated person, especially in programming. Exploring new technologies, developing games, webs and apps have always been my interest.
 
->*I am open to anyone who would share the same passion to develop something together from scratch. Feel free to get me in touch!
->* Facebook: [Fadly Kayo](https://www.facebook.com/fadlykayo)
->* E-mail: f_kayo@yahoo.com, fadly.kayo@googlemail.com
->* Slack: @fadlykayo
+>* _I am open to anyone who would share the same passion to develop something together from scratch. Feel free to get me in touch!
+>* _Facebook: [Fadly Kayo](https://www.facebook.com/fadlykayo)
+>* _E-mail: f_kayo@yahoo.com, fadly.kayo@googlemail.com
+>* _Slack: @fadlykayo
 
 Check out my pre-release mini game apk: [Forest Run](https://github.com/fadlykayo/fadlykayo.github.io/releases)
 
