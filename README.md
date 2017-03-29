@@ -18,12 +18,12 @@ _I am open to anyone who would share the same passion to develop something toget
 
 ## Specialties
 
->* _Languages: Javascript, NodeJS, C#, C++ (Basic), HTML, CSS                                                 
->* Frameworks: ExpressJS, React, Redux, React Native, Mocha
->* Libraries: JQuery, Sequelize, Mongoose, Bootstrap, MaterializeCSS, D3 (Basic), Chai, Jest
->* Databases: MongoDB, PostgresSQL, Sqlite
->* Gaming: Unity3D
->* Other: Git, Amazon AWS (Basic)_
+>* _Languages: Javascript, NodeJS, C#, C++ (Basic), HTML, CSS_                                              
+>* _Frameworks: ExpressJS, React, Redux, React Native, Mocha_
+>* _Libraries: JQuery, Sequelize, Mongoose, Bootstrap, MaterializeCSS, D3 (Basic), Chai, Jest_
+>* _Databases: MongoDB, PostgresSQL, Sqlite_
+>* _Gaming: Unity3D_
+>* _Other: Git, Amazon AWS (Basic)_
 
 ## Projects
 
@@ -54,7 +54,7 @@ _I am open to anyone who would share the same passion to develop something toget
 >* _Release: Feb 2016_
 
 ### [Lorsania](https://fadlykayo.github.io/):
->_Browser Quest mini game (Part 1) 
+>_Browser Quest mini game (Part 1)_
 
 
 **Thank your for coming! Until next time, see ya! :grin:**
