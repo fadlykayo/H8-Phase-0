@@ -16,10 +16,6 @@ _I am open to anyone who would share the same passion to develop something toget
 - _E-mail: f_kayo@yahoo.com, fadly.kayo@googlemail.com_
 - _Slack: @fadlykayo_
 
-Check out my pre-release mini game apk: [Forest Run](https://github.com/fadlykayo/fadlykayo.github.io/releases)
-
-Browser Quest short game Part 1: [Lorsania](https://fadlykayo.github.io/)
-
 ## Specialties
 
 >• Languages: Javascript, NodeJS, C#, C++ (Basic), HTML, CSS                                                 
@@ -28,5 +24,37 @@ Browser Quest short game Part 1: [Lorsania](https://fadlykayo.github.io/)
 >• Databases: MongoDB, PostgresSQL, Sqlite
 >• Gaming: Unity3D
 >• Other: Git, Amazon AWS (Basic)
+
+## Projects
+
+_Geo-ARG:_
+_A mobile game based Geolocation where you can socialize with others._
+
+_Role: back-end engineer._
+_Language: Javascript._
+
+_The server side (REST API) was built with Node.js, Express and Sequelize (Postgres + Postgis Extension) using TDD-Method. At the front side, we use React.js altogether with Redux and Native-Base UI. The team management and workflow itself was using Scrum, Kanban and Github/Git._
+
+_Platform: Android_
+_Release: Mar 2017_
+
+_PT.SUPERFOX:_
+_Project descriptionA social web-based game. Game features: character customization, town hall for chats, mini game tamagochi_
+
+_Role: back-end engineer._
+_Language: Javascript_
+_Frameworks and Libraries: NodeJs, ExpressJs, JQuery, AJAX, Mongoose, Mocha, Chai, MaterializeCSS_
+
+_Platform: Web_
+
+_Forest Run: [Forest Run](https://github.com/fadlykayo/fadlykayo.github.io/releases)_
+_An Endless Runner game developed using Unity3D and Blender. _
+
+_Language: C#_
+_Project description: Solo Project. Just for learning and hobby purpose_
+
+_Platform: Android_
+
+_Browser Quest short game Part 1: [Lorsania](https://fadlykayo.github.io/)
 
 **'Til the next time, see ya! :grin:**
