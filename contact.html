@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>KIN+</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons|Oswald" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <link type="text/css" rel="stylesheet" href="css/material-design-iconic-font.min.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <nav id="navigator" class="nav">
+      <div class="container" style="width: 78%;">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo" style="font-weight: bold; color: yellow; cursor: pointer; padding-left: 1px;">KIN+</a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="#" style="padding-right: 2px;">GUIDES</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="#">GUIDES</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main">
+      <div id="firstdiv" style="background-color: white; height: inherit; padding: 20px;">
+        <div class="container" style="width: 80%; margin-top: 8%;">
+          <h4 style="font-family: Oswald; margin-bottom: 30px;">How to Find Us</h4>
+          <div id="map"></div>
+          <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="row" style="margin-top: 35px; margin-bottom: 0px;">
+            <div class="col s4 m4">
+              <i class="material-icons prefix" style="margin-top: 2%;">account_circle</i>
+              <input id="name" class="validate" type="text" name="name" placeholder="Name">
+            </div>
+            <div class="col s4 m4">
+              <i class="material-icons prefix" style="margin-top: 2%;">phone</i>
+              <input id="phone" class="validate" type="text" name="phone" placeholder="Phone">
+            </div>
+            <div class="col s4 m4" style="margin-bottom: 10px;">
+              <i class="material-icons prefix" style="margin-top: 2%;">email</i>
+              <input id="email" class="validate" type="text" name="email" placeholder="Email">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="seconddiv" style="background-color: rgba(0,0,0,0.8); height: inherit; padding: 20px; color: white;">
+        <div class="container" style="width: 80%">
+          <h4 style="text-align: center">Contact Us</h4>
+          <div class="row" style="margin-bottom: 0px;">
+            <form class="col s12 m12" action="" method="">
+              <div class="input-field col s6 m6" style="padding-right: 30px;">
+                <div class="row">
+                  <i class="material-icons prefix" style="margin-top: 2%;">account_circle</i>
+                  <input id="name" class="validate" type="text" name="name" placeholder="Name">
+                </div>
+                <div class="row">
+                  <i class="material-icons prefix" style="margin-top: 2%;">phone</i>
+                  <input id="phone" class="validate" type="text" name="phone" placeholder="Phone">
+                </div>
+                <div class="row" style="margin-bottom: 10px;">
+                  <i class="material-icons prefix" style="margin-top: 2%;">email</i>
+                  <input id="email" class="validate" type="text" name="email" placeholder="Email">
+                </div>
+              </div>
+              <div class="input-field col s6 m6" style="padding-left: 30px;">
+                <div class="row">
+                  <i class="material-icons prefix" style="margin-top: 2%;">message</i>
+                  <textarea id="message" class="materialize-textarea" placeholder="Input Your Message Here"></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div id="addcontact" class="fixed-action-btn horizontal">
+        <a class="btn-floating btn-large red">
+          <i class="large material-icons green">person_add</i>
+        </a>
+        <ul>
+          <li><a href="#" class="btn-floating blue darken-4"><i class="zmdi zmdi-facebook"></i></a></li>
+          <li><a href="#" class="btn-floating blue darken-2"><i class="zmdi zmdi-twitter"></i></a></li>
+          <li><a href="#" class="btn-floating deep-purple darken-4"><i class="zmdi zmdi-instagram"></i></a></li>
+          <li><a href="#" class="btn-floating red darken-3"><i class="zmdi zmdi-google-plus"></i></a></li>
+        </ul>
+      </div>
+
+      <div id="thirddiv" style="background-color: rgba(0,0,0,0.9); height: inherit; padding: 20px; color: white;">
+        <div class="container" style="width: 80%">
+          <div class="row" style="margin-bottom: 0px;">
+            <div class="col s4 m4">
+              <h5 style="font-family: Oswald;">About</h5>
+              <p style="font-size: 10px; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="col s4 m4">
+              <h5 style="font-family: Oswald;">Services</h5>
+              <p style="font-size: 10px; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="col s4 m4">
+              <h5 style="font-family: Oswald;">Contact Person</h5>
+              <p style="font-size: 10px; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="fourthdiv" style="background-color: black; height: inherit; padding: 20px; color: white;">
+        <div class="container" style="width: 80%">
+          <p style="font-family: Oswald; margin: 0px;">Fadly Kayo © 2017 | Privacy Policy</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOb4Mncd6iQAIs_uV61vShB5lf_dz5-B8">
+    </script>
+    <script type="text/javascript" src="js/gmaps.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
+  </body>
+</html>
