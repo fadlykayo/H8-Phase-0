@@ -18,9 +18,10 @@
   border-radius: 5px;
   color: #ffff99;
   padding: 15px 30px;
-  height: 62px;
+  height: 70px;
   font-size: 16px;
   font-weight: bold;
+  text-align: center;
   align-items: center;
   transition-duration: 0.3s;
   cursor: pointer;
@@ -37,10 +38,11 @@
   border-radius: 5px;
   color: #ffff4d;
   padding: 15px 30px;
-  height: 62px;
+  height: 70px;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
+  align-items: center;
   transition-duration: 0.3s;
   cursor: pointer;
 }
