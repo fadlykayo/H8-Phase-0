@@ -121,7 +121,7 @@ function decoration() {
   npcTagImg4.style.display = "none";
   npcTagImg5.style.display = "none";
   placeTagImg.style.display = "none";
-  pressKeyImg.setAttribute("src", "DOM/images/click.png");
+  pressKeyImg.setAttribute("src", "images/click.png");
 
   box.setAttribute("class", "tag");
   box.setAttribute("id", "box");
@@ -168,7 +168,7 @@ function attributSet() {
       player1.job = "Novice"
     }
   }
-  
+
   chooseJob();
 
   // Else if untuk menentukan tipe personality
@@ -372,19 +372,19 @@ townDiv.addEventListener("click", function() {
   town2Div.style.display = "block";
   bottomPanel.style.display = "none";
   backgroundPanel.style.display = "block";
-  backgroundPanelText.innerHTML = "<img src='DOM/images/beginning.png'>" + "<br/>" + "In a time of strife between God, humans, and demons..." + "<br/>" + "<br/>" + "Scarred during the gruesome war and avoiding total destruction altogether, God, humans, and demons manage to enter into a truce..." + "<br/>" + "<br/>" + "But after 1,000 years of fragile and forged peace in Lorsania..." + "<br/>" + "<br/>" + "The lengthy peace eventually led the humans to forget their memories of the scars and hardship from the war. As they forgot faults of the past, selfishness, corruption, and arrogance slowly spread throughout the land..." + "<br/>" + "<br/>" + "Finally, the balance of peace broke and strange occurrences started happening. There came a strange howl from the boundaries that divided God, humans, and demons. Peaceful creatures became aggressive and attacked innocent villagers. Violent earthquakes, great hail storms drove some species to the brink of extinction..." + "<br/>" + "<br/>" + "The mysterious legend of demons were rediscovered...";
+  backgroundPanelText.innerHTML = "<img src='images/beginning.png'>" + "<br/>" + "In a time of strife between God, humans, and demons..." + "<br/>" + "<br/>" + "Scarred during the gruesome war and avoiding total destruction altogether, God, humans, and demons manage to enter into a truce..." + "<br/>" + "<br/>" + "But after 1,000 years of fragile and forged peace in Lorsania..." + "<br/>" + "<br/>" + "The lengthy peace eventually led the humans to forget their memories of the scars and hardship from the war. As they forgot faults of the past, selfishness, corruption, and arrogance slowly spread throughout the land..." + "<br/>" + "<br/>" + "Finally, the balance of peace broke and strange occurrences started happening. There came a strange howl from the boundaries that divided God, humans, and demons. Peaceful creatures became aggressive and attacked innocent villagers. Violent earthquakes, great hail storms drove some species to the brink of extinction..." + "<br/>" + "<br/>" + "The mysterious legend of demons were rediscovered...";
 });
 
 town2Div.addEventListener("click", function() {
   marketDiv.style.display = "block";
   npcTagImg.style.display = "block";
-  npcTagImg.setAttribute("src", "DOM/images/merchant.png");
+  npcTagImg.setAttribute("src", "images/merchant.png");
   npcTagImg2.style.display = "block";
-  npcTagImg2.setAttribute("src", "DOM/images/merchant2.png");
+  npcTagImg2.setAttribute("src", "images/merchant2.png");
   npcTagImg3.style.display = "block";
-  npcTagImg3.setAttribute("src", "DOM/images/merchant3.png");
+  npcTagImg3.setAttribute("src", "images/merchant3.png");
   placeTagImg.style.display = "block"; // for always
-  placeTagImg.setAttribute("src", "DOM/images/market.png");
+  placeTagImg.setAttribute("src", "images/market.png");
   bottomPanel.style.display = "block"; // for always
   bottomPanelText.innerHTML = "<p>This is where your adventure begin. You are in the middle of crowded place. There are a lot of people around you who are selling their stuffs. You are in a market square! What are you going to do now?</p>";
   // backgroundPanel.style.display = "none"; sowieso ga muncul karena ga kebagian
@@ -409,11 +409,11 @@ marketDivBtnNext.addEventListener("click", function() {
   npcTagImg2.style.display = "none";
   npcTagImg3.style.display = "none";
   npcTagImg4.style.display = "block";
-  npcTagImg4.setAttribute("src", "DOM/images/stranger.png");
+  npcTagImg4.setAttribute("src", "images/stranger.png");
   npcTagImg5.style.display = "block";
-  npcTagImg5.setAttribute("src", "DOM/images/stranger2.png");
+  npcTagImg5.setAttribute("src", "images/stranger2.png");
   placeTagImg.style.display = "block";
-  placeTagImg.setAttribute("src", "DOM/images/east_gate.png");
+  placeTagImg.setAttribute("src", "images/east_gate.png");
   bottomPanel.style.display = "block";
   bottomPanelText.innerHTML = "<p>You are at the East Gate of Lorsania. What are you going to do now?</p>";
   rightPanel.style.display = "block";
@@ -424,15 +424,15 @@ eastGateDivBtnPrev.addEventListener("click", function() {
   marketDiv.style.display = "block";
   eastGateDiv.style.display = "none";
   npcTagImg.style.display = "block";
-  npcTagImg.setAttribute("src", "DOM/images/merchant.png");
+  npcTagImg.setAttribute("src", "images/merchant.png");
   npcTagImg2.style.display = "block";
-  npcTagImg2.setAttribute("src", "DOM/images/merchant2.png");
+  npcTagImg2.setAttribute("src", "images/merchant2.png");
   npcTagImg3.style.display = "block";
-  npcTagImg3.setAttribute("src", "DOM/images/merchant3.png");
+  npcTagImg3.setAttribute("src", "images/merchant3.png");
   npcTagImg4.style.display = "none";
   npcTagImg5.style.display = "none";
   placeTagImg.style.display = "block";
-  placeTagImg.setAttribute("src", "DOM/images/market.png");
+  placeTagImg.setAttribute("src", "images/market.png");
   bottomPanel.style.display = "block";
   bottomPanelText.innerHTML = "<p>This is where your adventure begin. You are in the middle of crowded place. There are a lot of people around you who are selling their stuffs. You are in a market square! What are you going to do now?</p>";
   rightPanel.style.display = "block";
@@ -447,25 +447,25 @@ eastGateDivBtnNext.addEventListener("click", function() {
   npcTagImg4.style.display = "none";
   npcTagImg5.style.display = "none";
   box.style.display = "block";
-  box.setAttribute("src", "DOM/images/treasure_chest.png");
+  box.setAttribute("src", "images/treasure_chest.png");
   box.style.opacity = 0;
   box2.style.display = "block";
-  box2.setAttribute("src", "DOM/images/treasure_chest.png");
+  box2.setAttribute("src", "images/treasure_chest.png");
   box2.style.opacity = 0;
   box3.style.display = "block";
-  box3.setAttribute("src", "DOM/images/treasure_chest.png");
+  box3.setAttribute("src", "images/treasure_chest.png");
   box3.style.opacity = 0;
   box4.style.display = "block";
-  box4.setAttribute("src", "DOM/images/treasure_chest.png");
+  box4.setAttribute("src", "images/treasure_chest.png");
   box4.style.opacity = 0;
   box5.style.display = "block";
-  box5.setAttribute("src", "DOM/images/treasure_chest.png");
+  box5.setAttribute("src", "images/treasure_chest.png");
   box5.style.opacity = 0;
   box6.style.display = "block";
-  box6.setAttribute("src", "DOM/images/treasure_chest.png");
+  box6.setAttribute("src", "images/treasure_chest.png");
   box6.style.opacity = 0;
   placeTagImg.style.display = "block";
-  placeTagImg.setAttribute("src", "DOM/images/east_forest.png");
+  placeTagImg.setAttribute("src", "images/east_forest.png");
   bottomPanel.style.display = "block";
   bottomPanelText.innerHTML = "<p>You are at the East Forest. This is a bonus stage! Find all treasures that are hidden in this map! In the next story, you are going to confront your first creature. So be prepared!" + "<br/>" + "Note: if you can't find all the hidden treasures, you won't be able to go any further.</p>";
   rightPanel.style.display = "block";
@@ -479,9 +479,9 @@ eastForestDivBtnPrev.addEventListener("click", function() {
   npcTagImg2.style.display = "none";
   npcTagImg3.style.display = "none";
   npcTagImg4.style.display = "block";
-  npcTagImg4.setAttribute("src", "DOM/images/stranger.png");
+  npcTagImg4.setAttribute("src", "images/stranger.png");
   npcTagImg5.style.display = "block";
-  npcTagImg5.setAttribute("src", "DOM/images/stranger2.png");
+  npcTagImg5.setAttribute("src", "images/stranger2.png");
   box.style.display = "none";
   box2.style.display = "none";
   box3.style.display = "none";
@@ -489,7 +489,7 @@ eastForestDivBtnPrev.addEventListener("click", function() {
   box5.style.display = "none";
   box6.style.display = "none";
   placeTagImg.style.display = "block"; // for always
-  placeTagImg.setAttribute("src", "DOM/images/east_gate.png");
+  placeTagImg.setAttribute("src", "images/east_gate.png");
   bottomPanel.style.display = "block"; // for always
   bottomPanelText.innerHTML = "<p>You are at the East Gate of Lorsania. What are you going to do now?</p>";
   rightPanel.style.display = "block"; // for always
@@ -500,7 +500,7 @@ eastForestDivBtnPrev.addEventListener("click", function() {
 eastForestDivBtnNext.addEventListener("click", function() {
   bottomPanel.style.display = "none";
   endPanel.style.display = "block";
-  endPanelText.innerHTML = "<img src='DOM/images/continue.png'>" + "<br/>" + "Thank you for playing The Virtual Kingdom of Lorsania (Part 1)." + "<br/>" + "<br/>" + "This is not the end, but the beginning of the whole story. In the future, there will be lots of battle scene and the maps will be much bigger! (Part 2)" + "<br/>" + "<br/>" + "This is the result of your character until this point:  " + "<br/>" + "<br/>" + "Your Class: " + player1.job + ". " + player1.classInfo(player1.job) + "<br/>" + "<br/>" +"Your Personality: " + player1.personality + ". " + player1.charInfo(player1.personality) + " Credits: https://github.com/fadlykayo";
+  endPanelText.innerHTML = "<img src='images/continue.png'>" + "<br/>" + "Thank you for playing The Virtual Kingdom of Lorsania (Part 1)." + "<br/>" + "<br/>" + "This is not the end, but the beginning of the whole story. In the future, there will be lots of battle scene and the maps will be much bigger! (Part 2)" + "<br/>" + "<br/>" + "This is the result of your character until this point:  " + "<br/>" + "<br/>" + "Your Class: " + player1.job + ". " + player1.classInfo(player1.job) + "<br/>" + "<br/>" +"Your Personality: " + player1.personality + ". " + player1.charInfo(player1.personality) + " Credits: https://github.com/fadlykayo";
   rightPanelText.innerHTML = "<h3>Character Stats</h3>" + "<p>Class: " + player1.job + "<br/>" + "<br/>" + "Personality: " +  player1.personality + "<br/></p>" + "<h3>Inventory</h3>" + "<p>Gold: " + player1.gold + " Gold" + "<br/>" + "<br/>" + "Equipment: " + player1.equipment + "<br/>" + "<br/>" + "Items: " + player1.item + "</p>";
   eastForestDivBtnPrev.style.display = "none";
   eastForestDivBtnNext.style.display = "none";
@@ -686,13 +686,13 @@ npcTagImg3.addEventListener("click", function() {
     pDOM7.style.display = "none";
     pDOM9.style.display = "block";
     optionBtn9.setAttribute("class", "button button-image position");
-    optionBtn9.innerHTML = "<img src='DOM/images/sword.png' class='option5'>";
+    optionBtn9.innerHTML = "<img src='images/sword.png' class='option5'>";
     pDOM10.style.display = "block";
     optionBtn10.setAttribute("class", "button button-image position2");
-    optionBtn10.innerHTML = "<img src='DOM/images/bow.png' class='option6'>";
+    optionBtn10.innerHTML = "<img src='images/bow.png' class='option6'>";
     pDOM11.style.display = "block";
     optionBtn11.setAttribute("class", "button button-image position3");
-    optionBtn11.innerHTML = "<img src='DOM/images/wand.png' class='option7'>";
+    optionBtn11.innerHTML = "<img src='images/wand.png' class='option7'>";
 
     optionBtn9.addEventListener("click", function () {
       brawler++;
@@ -756,13 +756,13 @@ npcTagImg3.addEventListener("click", function() {
     pDOM7.style.display = "none";
     pDOM9.style.display = "block";
     optionBtn9.setAttribute("class", "button button-image position");
-    optionBtn9.innerHTML = "<img src='DOM/images/sword.png' class='option5'>";
+    optionBtn9.innerHTML = "<img src='images/sword.png' class='option5'>";
     pDOM10.style.display = "block";
     optionBtn10.setAttribute("class", "button button-image position2");
-    optionBtn10.innerHTML = "<img src='DOM/images/bow.png' class='option6'>";
+    optionBtn10.innerHTML = "<img src='images/bow.png' class='option6'>";
     pDOM11.style.display = "block";
     optionBtn11.setAttribute("class", "button button-image position3");
-    optionBtn11.innerHTML = "<img src='DOM/images/wand.png' class='option7'>";
+    optionBtn11.innerHTML = "<img src='images/wand.png' class='option7'>";
 
     optionBtn9.addEventListener("click", function () {
       brawler++;
@@ -854,13 +854,13 @@ npcTagImg4.addEventListener("click", function() {
     optionBtn8.setAttribute("class", "button button-option option4");
     pDOM12.style.display = "block";
     optionBtn12.setAttribute("class", "button button-image2 position4");
-    optionBtn12.innerHTML = "<img src='DOM/images/heavy_armor.jpg' class='option8'>";
+    optionBtn12.innerHTML = "<img src='images/heavy_armor.jpg' class='option8'>";
     pDOM13.style.display = "block";
     optionBtn13.setAttribute("class", "button button-image2 position5");
-    optionBtn13.innerHTML = "<img src='DOM/images/leather_armor.jpg' class='option8'>";
+    optionBtn13.innerHTML = "<img src='images/leather_armor.jpg' class='option8'>";
     pDOM14.style.display = "block";
     optionBtn14.setAttribute("class", "button button-image2 position6");
-    optionBtn14.innerHTML = "<img src='DOM/images/cloth_armor.jpg' class='option8'>";
+    optionBtn14.innerHTML = "<img src='images/cloth_armor.jpg' class='option8'>";
     pDOM18.style.display = "none";
 
     optionBtn12.addEventListener("click", function () {
@@ -1001,7 +1001,7 @@ box.addEventListener("click", function() {
     pDOM18.style.display = "none";
     pDOM19.style.display = "block";
     optionBtn19.setAttribute("class", "tag button-image3 option1_1");
-    optionBtn19.innerHTML = "<img src='DOM/images/sword2.png'>";
+    optionBtn19.innerHTML = "<img src='images/sword2.png'>";
     player1.equipment.push("Stinger Blade");
     attributSet();
   }
@@ -1042,7 +1042,7 @@ box2.addEventListener("click", function() {
     pDOM18.style.display = "none";
     pDOM19.style.display = "block";
     optionBtn19.setAttribute("class", "tag button-image3 option1_1");
-    optionBtn19.innerHTML = "<img src='DOM/images/bow2.png'>";
+    optionBtn19.innerHTML = "<img src='images/bow2.png'>";
     player1.equipment.push("Viper Bow");
     attributSet();
   }
@@ -1083,7 +1083,7 @@ box3.addEventListener("click", function() {
     pDOM18.style.display = "none";
     pDOM19.style.display = "block";
     optionBtn19.setAttribute("class", "tag button-image3 option1_1");
-    optionBtn19.innerHTML = "<img src='DOM/images/wand2.png'>";
+    optionBtn19.innerHTML = "<img src='images/wand2.png'>";
     player1.equipment.push("Netherbane Wand");
     attributSet();
   }
@@ -1124,7 +1124,7 @@ box4.addEventListener("click", function() {
     pDOM18.style.display = "none";
     pDOM19.style.display = "block";
     optionBtn19.setAttribute("class", "tag button-image3 option4_2");
-    optionBtn19.innerHTML = "<img src='DOM/images/gold.png'>";
+    optionBtn19.innerHTML = "<img src='images/gold.png'>";
     player1.gold += 5000;
     attributSet();
   }
@@ -1165,7 +1165,7 @@ box5.addEventListener("click", function() {
     pDOM18.style.display = "none";
     pDOM19.style.display = "block";
     optionBtn19.setAttribute("class", "tag button-image3 option1_2");
-    optionBtn19.innerHTML = "<img src='DOM/images/potion_small.png'>";
+    optionBtn19.innerHTML = "<img src='images/potion_small.png'>";
     player1.item.push("Small Potion");
     attributSet();
   }
@@ -1206,7 +1206,7 @@ box6.addEventListener("click", function() {
     pDOM18.style.display = "none";
     pDOM19.style.display = "block";
     optionBtn19.setAttribute("class", "tag button-image3 option1_2");
-    optionBtn19.innerHTML = "<img src='DOM/images/potion_small.png'>";
+    optionBtn19.innerHTML = "<img src='images/potion_small.png'>";
     player1.item.push("Small Potion");
     attributSet();
   }
