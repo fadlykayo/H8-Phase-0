@@ -49,29 +49,29 @@ body {
 }
 
 .opening {
-  background: url('images/opening.jpg') no-repeat center center;
+  background: url('Lorsania_ver_2_Javascript/images/opening.jpg') no-repeat center center;
   background-size: cover;
 }
 
 .town {
-  background: url('images/town.jpg') no-repeat center center;
+  background: url('Lorsania_ver_2_Javascript/images/town.jpg') no-repeat center center;
   background-size: cover;
 }
 
 .market {
-  background: url('images/market.jpg') no-repeat center center;
+  background: url('Lorsania_ver_2_Javascript/images/market.jpg') no-repeat center center;
   background-size: cover;
   cursor: default;
 }
 
 .east-gate {
-  background: url('images/east_gate.jpg') no-repeat center center;
+  background: url('Lorsania_ver_2_Javascript/images/east_gate.jpg') no-repeat center center;
   background-size: cover;
   cursor: default;
 }
 
 .east-forest {
-  background: url('images/east_forest.jpg') no-repeat center center;
+  background: url('Lorsania_ver_2_Javascript/images/east_forest.jpg') no-repeat center center;
   background-size: cover;
   cursor: default;
 }
