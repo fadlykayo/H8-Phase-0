@@ -92,7 +92,14 @@ var box6 = document.createElement("img");
 var myVideo = document.getElementById("myVideo");
 
 function decoration() {
-  myVideo.play();
+  myVideo.play().then((e) => {
+    myVideo.play();
+  }).catch((err) => {
+    pressKeyImg.addEventListener("click", function(e) {
+      myVideo.play();
+    });
+  });
+
   townDiv.style.display = "none";
   town2Div.style.display = "none";
   marketDiv.style.display = "none";
