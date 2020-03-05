@@ -32,6 +32,10 @@ _Feel free to get me in touch :)._
 
 ## Projects
 
+### Jelas Home
+##### _Dec 2019 – Present_
+>_VeriJelas adalah sebuah perusahaan yang bergerak sebagai penyedia layanan verifikasi biometric VeriJelas melayani kebutuhan yang sangat khusus dalam bidang intelijen dan keamanan, memberdayakan Pemerintah, Lembaga Penegak Hukum, Bank dan Perusahaan untuk memecahkan tantangan identifikasi dan verifikasi seseorang melalui biometrik._
+
 ### Erha Dermatology - Mobile Application
 ##### _Oct 2018 – Present_
 >_Berawal dari sebuah klinik di Jakarta, yang berdiri sejak 28 September 1999, erha hadir membawa warna
